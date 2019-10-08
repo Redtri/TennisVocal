@@ -20,7 +20,7 @@ public class Micro : MonoBehaviour {
     }
 
     private void Update() {
-        float[] spectrum = new float[256];
+        float[] spectrum = new float[1024];
 
         GetComponent<AudioSource>().GetSpectrumData(spectrum, 0, FFTWindow.Rectangular);
 
@@ -31,11 +31,12 @@ public class Micro : MonoBehaviour {
             Debug.DrawLine(new Vector3(Mathf.Log(i - 1), Mathf.Log(spectrum[i - 1]), 3), new Vector3(Mathf.Log(i), Mathf.Log(spectrum[i]), 3), Color.blue);
         }
 
-        int la = frequency * 256 / AudioSettings.outputSampleRate / 2;
+		int la = Mathf.FloorToInt( frequency * spectrum.Length / AudioSettings.outputSampleRate *2);
 
-        print(spectrum[la]);
+      //  print(spectrum[la]);
         Debug.DrawRay(new Vector3(la - 1, Mathf.Log(spectrum[la - 1]) + 10, 2), Vector3.up* 10, Color.green);
-    }
+		Debug.DrawRay(new Vector3(Mathf.Log(la - 1), Mathf.Log(spectrum[la - 1]), 3), Vector3.up * 10, Color.blue);
+	}
 
     private void OnPhraseRecognized(PhraseRecognizedEventArgs args) {
         StringBuilder builder = new StringBuilder();
