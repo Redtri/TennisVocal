@@ -1,29 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
+using System.Text;
 using UnityEngine;
-using UnityEngine.Audio;
+using UnityEngine.Windows.Speech;
 
-public class Micro : MonoBehaviour
-{
-    public Microphone micro;
-    public AudioSource source;
+public class Micro : MonoBehaviour {
+    [SerializeField]
+    private string[] m_Keywords;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        source = this.GetComponent<AudioSource>();
+    private KeywordRecognizer m_Recognizer;
+
+    void Start() {
+        print(PhraseRecognitionSystem.isSupported);
+        m_Recognizer = new KeywordRecognizer(m_Keywords);
+        m_Recognizer.OnPhraseRecognized += OnPhraseRecognized;
+        m_Recognizer.Start();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            source.clip = Microphone.Start("", false, 5, 44100);
-        }
-        if (Input.GetKeyDown(KeyCode.E)) {
-            if (!source.isPlaying && source.clip != null) {
-                source.Play();
-            }
-        }
+    private void OnPhraseRecognized(PhraseRecognizedEventArgs args) {
+        StringBuilder builder = new StringBuilder();
+        builder.AppendFormat("{0} ({1}){2}", args.text, args.confidence, Environment.NewLine);
+        builder.AppendFormat("\tTimestamp: {0}{1}", args.phraseStartTime, Environment.NewLine);
+        builder.AppendFormat("\tDuration: {0} seconds{1}", args.phraseDuration.TotalSeconds, Environment.NewLine);
+        Debug.Log(builder.ToString());
     }
 }
