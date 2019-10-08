@@ -10,6 +10,10 @@ public class Paddle : MonoBehaviour
 	private int caseNumber = 10;
 	[SerializeField]
 	private int startCase = 5;
+	[SerializeField]
+	private KeyCode upKey = KeyCode.UpArrow;
+	[SerializeField]
+	private KeyCode downKey = KeyCode.DownArrow;
 
 
 	private int _currentCase;
@@ -30,12 +34,19 @@ public class Paddle : MonoBehaviour
 	private Vector3 GetPosition()
 	{
 		float f = (float)_currentCase / (float)caseNumber;
-		Debug.Log(f);
-		return _startPos + Vector3.right * Mathf.Lerp(0, terrain.size.x,f);
+		return _startPos + Vector3.forward * Mathf.Lerp(0, terrain.size.x,f);
 	}
 
     void Update()
     {
+		if (Input.GetKeyDown(KeyCode.UpArrow))
+		{
+			Move(1);
+		}
+		if (Input.GetKeyDown(KeyCode.DownArrow)){
+			Move(-1);
+		}
+
 		transform.position = GetPosition();
     }
 }
