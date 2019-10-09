@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class InputHandler : MonoBehaviour, IInput {
 
 	public int micIndex = 0;
+	public bool keyBoardControl = false;
 	[SerializeField]
 	private Band[] bands = new Band[3];
    
@@ -40,8 +41,14 @@ public class InputHandler : MonoBehaviour, IInput {
     void Update()
     {
 		RefreshAudioSpectrum();
-		UpdateInput();
-    }
+		if (keyBoardControl)
+		{
+			UpdateKeyboardInput();
+		}else
+		{
+			UpdateMicInput();
+		}
+	}
 
     private void RefreshAudioSpectrum() {
         AudioSpectrumHelper.GetAverageAmplitudes(_source, 4096, bands);
@@ -49,7 +56,22 @@ public class InputHandler : MonoBehaviour, IInput {
         AudioSpectrumHelper.BandDisplay(_source, 4096, bands);
     }
 
-	private void UpdateInput()
+	private void UpdateKeyboardInput()
+	{
+		if(micIndex == 0)
+		{
+			_axis = (int)Input.GetAxis("Horizontal");
+			_power = Input.GetKeyDown(KeyCode.Space) ? 1 : 0;
+		}
+		else
+		{
+			_axis = (int)Input.GetAxis("Vertical");
+			_power = Input.GetKeyDown(KeyCode.A) ? 1 : 0;
+		}
+		
+	}
+
+	private void UpdateMicInput()
 	{
 		_axis = 0;
 		
