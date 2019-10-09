@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class InputHandler : MonoBehaviour, IInput {
 
+	public int micIndex = 0;
 	[SerializeField]
 	private Band[] bands = new Band[3];
    
@@ -30,7 +31,7 @@ public class InputHandler : MonoBehaviour, IInput {
         foreach (string str in Microphone.devices) {
             Debug.Log(str);
         }
-        _clip = Microphone.Start(Microphone.devices[0], true, 5, 48000);
+        _clip = Microphone.Start(Microphone.devices[micIndex], true, 5, 48000);
         _source.clip = _clip;
         _source.PlayDelayed(0.01f);
         Debug.Log(AudioSettings.outputSampleRate);		

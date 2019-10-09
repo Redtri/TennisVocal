@@ -35,7 +35,7 @@ public class PaddleAnim : MonoBehaviour
             }
         } else {
             if (considerMoving) {
-                if (detectionTime == 0f) {
+                if (detectionTime <= 0f) {
                     detectionTime = moveDetectionDelay;
                     considerMoving = false;
                     animator.SetBool("moving", false);

@@ -41,7 +41,7 @@ public class Paddle : MonoBehaviour
 	public Vector3 GetPosition()
 	{
 		float f = (float)_currentCase / (float)caseNumber;
-		return _startPos + Vector3.forward * Mathf.Lerp(0, terrain.size.x,f);
+		return _startPos + Vector3.forward * Mathf.Lerp(0, terrain.size.x*2,f);
 	}
 
 
