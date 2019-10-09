@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class Paddle : MonoBehaviour
 {
-	[SerializeField]
-	private Terrain terrain;
-	[SerializeField]
-	private int caseNumber = 10;
-	[SerializeField]
-	private int startCase = 5;
-	[SerializeField]
-	private KeyCode upKey = KeyCode.UpArrow;
-	[SerializeField]
-	private KeyCode downKey = KeyCode.DownArrow;
 
+	private IInput inputs;
+	public Terrain terrain;
+	public int caseNumber = 10;
+	public int startCase = 5;
 
 	private int _currentCase;
 	private Vector3 _startPos;
+
+	private bool _IsMoving;
+	public bool isMoving => _IsMoving;
+
+	public delegate void Strike(float strikeForce);
+	public event Strike onStrike;
 
 	private void Start()
 	{
@@ -27,6 +27,12 @@ public class Paddle : MonoBehaviour
 
 	public void Move(int direction)
 	{
+		if (direction == 0)
+		{
+			_IsMoving = false;
+			return;
+		}
+		_IsMoving = true;
 		_currentCase += direction;
 		_currentCase = Mathf.Clamp(_currentCase, 0, caseNumber);
 	}
@@ -39,13 +45,11 @@ public class Paddle : MonoBehaviour
 
     void Update()
     {
-		if (Input.GetKeyDown(KeyCode.UpArrow))
+		if(inputs.power > 0)
 		{
-			Move(1);
+			onStrike?.Invoke(inputs.power);
 		}
-		if (Input.GetKeyDown(KeyCode.DownArrow)){
-			Move(-1);
-		}
+		Move(inputs.axis);
 
 		transform.position = GetPosition();
     }

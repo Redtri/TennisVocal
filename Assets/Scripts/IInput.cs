@@ -1,7 +1,8 @@
 ﻿
 interface IInput
 {
-	float axis { get; }
+	int axis { get; }
 	float power { get; }
+
 }
 
