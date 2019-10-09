@@ -2,20 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum eGAME_PHASE { MENU, VERSUS, PLAY };
+public enum eGAME_STATE { RUN, PAUSE, QUIT };
+
 public class GameManager : MonoBehaviour
 {
-    public GameObject canvas;
-    private bool isPaused;
+    public static GameObject canvas;
+    private static bool isPaused;
+    public static GameManager instance { get; private set; }
+    public static eGAME_PHASE gamePhase { get; private set; }
+    public static eGAME_STATE gameState { get; private set; }
+
+    private void Awake() {
+        if (!instance) {
+            instance = this;
+        } else {
+            Destroy(this);
+        }
+    }
     
-    // Start is called before the first frame update
     void Start() {
         isPaused = false;
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
             PauseResume();
         }
     }
