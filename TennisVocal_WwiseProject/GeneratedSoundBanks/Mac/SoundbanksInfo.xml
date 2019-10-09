@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>/Users/romainmineur/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Desktop/Cours ENJMIN/TennisVoice/Git_Tennis/TennisVocal/TennisVocal_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/romainmineur/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Desktop/Cours ENJMIN/TennisVoice/Git_Tennis/TennisVocal/TennisVocal_WwiseProject/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/romainmineur/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Desktop/Cours ENJMIN/TennisVoice/Git_Tennis/TennisVocal/TennisVocal_WwiseProject/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/romainmineur/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/y:/Desktop/Cours ENJMIN/TennisVoice/Git_Tennis/TennisVocal/TennisVocal_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\All\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="979765101" Name="Win" ObjectPath="\Events\Default Work Unit\Win" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="1041010884" Language="SFX">
+					<ShortName>win001.wav</ShortName>
+					<Path>SFX/win001_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

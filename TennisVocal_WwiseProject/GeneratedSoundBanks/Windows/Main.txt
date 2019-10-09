@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	979765101	Win			\Default Work Unit\Win	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1041010884	win001	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\win001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\win001		352864
+

@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CE43EB54-4164-4423-B870-66BED914A838}" SchemaVersion="94">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{CE43EB54-4164-4423-B870-66BED914A838}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CE43EB54-4164-4423-B870-66BED914A838}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="win001" ID="{9B93DD03-F2AE-4898-AE0A-11AD2862D654}" ShortID="948655790">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="win001" ID="{32304FF7-8401-4E85-A829-2E42436261EF}" ShortID="1041010884">
+							<Language>SFX</Language>
+							<AudioFile>win001.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="win001" ID="{32304FF7-8401-4E85-A829-2E42436261EF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
