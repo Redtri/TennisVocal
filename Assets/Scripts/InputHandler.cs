@@ -21,6 +21,8 @@ public class InputHandler : MonoBehaviour, IInput {
 	[SerializeField]
 	private float strikeTolerance = 0.5f;
 
+	private bool wasStriking = false;
+
 
     void Awake()
     {
@@ -52,13 +54,19 @@ public class InputHandler : MonoBehaviour, IInput {
 		
 		if (bands[2].maxPeak > strikeTolerance)
 		{
-			if (_power == 0)
+			if (!wasStriking)
 			{
 				_power = 1;
 				return;
-			}		
+			}else
+			{
+				_power = 0;
+			}
+
+			wasStriking = true;
 		}else
 		{
+			wasStriking = false;
 			_power = 0;
 		}
 
