@@ -7,7 +7,9 @@ public class InputHandler : MonoBehaviour, IInput {
 
 	public int micIndex = 0;
 	public bool keyBoardControl = false;
-	[SerializeField]
+
+	public PlayerBands playerBands;
+
 	private Band[] bands = new Band[3];
    
     private AudioSource _source;
@@ -35,12 +37,17 @@ public class InputHandler : MonoBehaviour, IInput {
         _clip = Microphone.Start(Microphone.devices[micIndex], true, 5, 48000);
         _source.clip = _clip;
         _source.PlayDelayed(0.01f);
-        Debug.Log(AudioSettings.outputSampleRate);		
+        Debug.Log(AudioSettings.outputSampleRate);
 	}
 
     void Update()
     {
+		playerBands.UpdateBands(_source, 4096);
+		bands = playerBands.GetBands();
 		RefreshAudioSpectrum();
+		
+		playerBands.UpdateValue(bands);
+		
 		if (keyBoardControl)
 		{
 			UpdateKeyboardInput();
@@ -68,14 +75,14 @@ public class InputHandler : MonoBehaviour, IInput {
 			_axis = (int)Input.GetAxis("Vertical");
 			_power = Input.GetKeyDown(KeyCode.A) ? 1 : 0;
 		}
-		
 	}
+
 
 	private void UpdateMicInput()
 	{
 		_axis = 0;
-		
-		if (bands[2].maxPeak > strikeTolerance)
+
+		if (playerBands.strikeBand.maxPeak > strikeTolerance)
 		{
 			if (!wasStriking)
 			{
@@ -83,7 +90,7 @@ public class InputHandler : MonoBehaviour, IInput {
 				
 			}else
 			{
-				_power = 0;
+				_power = -1;
 			}
 
 			wasStriking = true;
@@ -95,11 +102,11 @@ public class InputHandler : MonoBehaviour, IInput {
 			_power = 0;
 		}
 
-		if (bands[0].maxPeak > tolerance && bands[0].maxPeak > bands[1].maxPeak)
+		if (playerBands.low.maxPeak > tolerance && playerBands.low.maxPeak > playerBands.high.maxPeak)
 		{
 			_axis = 1;
 		}
-		if(bands[1].maxPeak > tolerance && bands[1].maxPeak > bands[0].maxPeak)
+		if(playerBands.high.maxPeak > tolerance && playerBands.high.maxPeak > playerBands.low.maxPeak)
 		{
 			_axis = -1;
 		}

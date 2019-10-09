@@ -8,9 +8,12 @@ public class Paddle : MonoBehaviour
 	private Terrain terrain;
 	public int caseNumber = 10;
 	public int startCase = 5;
+	public float speed = 1;
 
 	private int _currentCase;
 	private Vector3 _startPos;
+
+	private float currentPos = 0.5f;
 
 	private bool _IsMoving;
 	public bool isMoving => _IsMoving;
@@ -34,26 +37,30 @@ public class Paddle : MonoBehaviour
 			return;
 		}
 		_IsMoving = true;
-		_currentCase += direction;
-		_currentCase = Mathf.Clamp(_currentCase, 0, caseNumber);
+		currentPos += direction * Time.deltaTime * speed;
+
+
+		//_currentCase += direction;
+		//_currentCase = Mathf.Clamp(_currentCase, 0, caseNumber);
 	}
 
 	public Vector3 GetPosition()
 	{
 		float f = (float)_currentCase / (float)caseNumber;
-		return _startPos + Vector3.forward * Mathf.Lerp(0, terrain.size.x*2,f);
+		return _startPos + Vector3.forward * Mathf.Lerp(0, terrain.size.x*2,currentPos);
 	}
 
 
     void Update()
     {
-		
 		if(inputs.power > 0)
 		{
 			onStrike?.Invoke(inputs.power);
-			Debug.Log("Strike");
 		}
-		Move(inputs.axis);
+		if (inputs.power == 0)
+		{
+			Move(inputs.axis);
+		}
 
 		transform.parent.position = GetPosition();
     }
