@@ -90,7 +90,7 @@ public class InputHandler : MonoBehaviour, IInput {
 				
 			}else
 			{
-				_power = 0;
+				_power = -1;
 			}
 
 			wasStriking = true;
