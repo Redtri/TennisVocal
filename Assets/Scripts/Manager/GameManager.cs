@@ -8,7 +8,7 @@ public enum eGAME_STATE { RUN, LOAD, PAUSE};
 
 public class GameManager : MonoBehaviour
 {
-    public static GameObject currentCanvas;
+   // public static GameObject currentCanvas;
     private static bool isPaused;
     public static GameManager instance { get; private set; }
     public static eGAME_PHASE gamePhase { get; private set; }
@@ -19,6 +19,9 @@ public class GameManager : MonoBehaviour
 
     public delegate void Service(int playerIndex);
     public event Service onService;
+
+	public delegate void Pause(bool isPause);
+	public event Pause onPause;
 
     private void OnEnable() {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -52,12 +55,13 @@ public class GameManager : MonoBehaviour
         if (isPaused) {
             isPaused = false;
             Time.timeScale = 1f;
-            currentCanvas.transform.GetChild(0).gameObject.SetActive(false);
+          //  currentCanvas.transform.GetChild(0).gameObject.SetActive(false);
         } else {
             isPaused = true;
             Time.timeScale = 0f;
-            currentCanvas.transform.GetChild(0).gameObject.SetActive(true);
+           // currentCanvas.transform.GetChild(0).gameObject.SetActive(true);
         }
+		onPause?.Invoke(isPaused);
     }
 
     private IEnumerator StartVersus() {
@@ -69,7 +73,7 @@ public class GameManager : MonoBehaviour
 
     private void StartService(int playerIndex) {
         onService?.Invoke(playerIndex);
-        currentCanvas.transform.GetChild(1).gameObject.SetActive(false);
+       // currentCanvas.transform.GetChild(1).gameObject.SetActive(false);
     }
 
     private void PrintCouille(int d) {
@@ -86,7 +90,7 @@ public class GameManager : MonoBehaviour
     }
 
     private void LoadCanvas() {
-        currentCanvas = FindObjectOfType<Canvas>().gameObject;
+       // currentCanvas = FindObjectOfType<Canvas>().gameObject;
     }
 
     public void LoadScene(int index) {
