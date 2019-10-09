@@ -14,7 +14,7 @@ public class Paddle : MonoBehaviour
 	private KeyCode upKey = KeyCode.UpArrow;
 	[SerializeField]
 	private KeyCode downKey = KeyCode.DownArrow;
-
+    public bool isMoving { get; private set; }
 
 	private int _currentCase;
 	private Vector3 _startPos;
@@ -31,7 +31,7 @@ public class Paddle : MonoBehaviour
 		_currentCase = Mathf.Clamp(_currentCase, 0, caseNumber);
 	}
 
-	private Vector3 GetPosition()
+	public Vector3 GetPosition()
 	{
 		float f = (float)_currentCase / (float)caseNumber;
 		return _startPos + Vector3.forward * Mathf.Lerp(0, terrain.size.x,f);
