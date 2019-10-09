@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public enum eINPUT { LEFT, RIGHT, STRIKE };
 
-public class InputHandler : MonoBehaviour {
+public class InputHandler : MonoBehaviour, IInput {
 
 	[SerializeField]
 	private Paddle paddle;
@@ -26,8 +26,12 @@ public class InputHandler : MonoBehaviour {
     //INPUT DATA
     private eINPUT currentInput;
     private List<Note> inputs;
-	private int _axis = 0;
-	public int axis => _axis;
+
+	private float _axis = 0;
+	public float axis => _axis;
+	private float _power = 0;
+	public float power => _power;
+
 	[SerializeField]
 	private float tolerance = 0.5f;
 	[SerializeField]
