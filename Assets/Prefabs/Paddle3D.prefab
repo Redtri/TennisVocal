@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 1489079859775254014}
   - component: {fileID: 1489079859775254010}
   m_Layer: 0
-  m_Name: Paddle
+  m_Name: Paddle3D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,10 +85,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1489079859775254013}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a97679b182045f944a5a0ffd420be98f, type: 3}
+  m_Script: {fileID: 11500000, guid: 447add42229ee864fb5d1eac4b3f33d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bouncyness: 50
+  bounciness: 10
   reference: {fileID: 1489079859761493852}
   wwHitEvent:
     idInternal: 0
