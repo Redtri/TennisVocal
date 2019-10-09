@@ -66,7 +66,7 @@ public class InputHandler : MonoBehaviour, IInput {
 
 		RefreshAudioSpectrum();
 		UpdateInput();
-		paddle.Move(_axis);
+		//paddle.Move(_axis);
        // HandleCapture();
     }
 
