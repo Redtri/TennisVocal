@@ -11,7 +11,15 @@ public class PaddleAnim : MonoBehaviour
     public float moveDetectionDelay;
     private float detectionTime;
     private bool considerMoving;
-    
+
+    private void OnEnable() {
+        paddle.onStrike += TriggerStrike;
+    }
+
+    private void OnDisable() {
+        paddle.onStrike -= TriggerStrike;
+    }
+
     void Start()
     {
         animator = GetComponent<Animator>();
