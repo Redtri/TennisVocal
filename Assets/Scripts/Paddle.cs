@@ -19,8 +19,9 @@ public class Paddle : MonoBehaviour
 	public delegate void Strike(float strikeForce);
 	public event Strike onStrike;
 
-	private void Start()
+	private void Awake()
 	{
+		inputs = GetComponent<IInput>();
 		_currentCase = startCase;
 		_startPos = transform.position;
 	}
@@ -43,11 +44,14 @@ public class Paddle : MonoBehaviour
 		return _startPos + Vector3.forward * Mathf.Lerp(0, terrain.size.x,f);
 	}
 
+
     void Update()
     {
+		
 		if(inputs.power > 0)
 		{
 			onStrike?.Invoke(inputs.power);
+			Debug.Log("Strike");
 		}
 		Move(inputs.axis);
 
