@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1dba0c901f109341aec4c71b021ac57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  caseNumber: 10
-  startCase: 5
+  caseNumber: 20
+  startCase: 10
 --- !u!114 &6785922878561011675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +313,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2642371685402082325, guid: 027947692d73f23429063faf27acb493,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 2642371685402082324, guid: 027947692d73f23429063faf27acb493,
         type: 3}
       propertyPath: m_Name
@@ -323,6 +328,12 @@ PrefabInstance:
       propertyPath: paddle
       value: 
       objectReference: {fileID: 1492948106059091271}
+    - target: {fileID: 2149183215278472705, guid: 027947692d73f23429063faf27acb493,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: 0ec1924c36d44fe4386654e5d8a5e3b4,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 027947692d73f23429063faf27acb493, type: 3}
 --- !u!4 &6358126293044633636 stripped
