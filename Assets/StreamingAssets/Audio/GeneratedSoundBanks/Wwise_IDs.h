@@ -13,7 +13,6 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID LOOSE_EVENT = 694907692U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID TENNISBALL_BOUNCE_EVENT = 2808149963U;
         static const AkUniqueID TENNISBALL_SHOOT_EVENT = 3581374598U;
