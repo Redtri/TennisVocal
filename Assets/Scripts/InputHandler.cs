@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class InputHandler : MonoBehaviour, IInput {
 
 	[SerializeField]
-	private Paddle paddle;
-	[SerializeField]
 	private Band[] bands = new Band[3];
    
     private AudioSource _source;
