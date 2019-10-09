@@ -1028,7 +1028,7 @@ PrefabInstance:
     - target: {fileID: 6358126293035541118, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6358126293035541117, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
         type: 3}
@@ -1093,7 +1093,7 @@ PrefabInstance:
     - target: {fileID: 6785922878561011675, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
         type: 3}
       propertyPath: keyBoardControl
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f144944ff6eb34bb1f82dbcc56c74a, type: 3}
@@ -1627,16 +1627,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6785922878561011675, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
+        type: 3}
+      propertyPath: keyBoardControl
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1492948106059091271, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
         type: 3}
       propertyPath: terrain
       value: 
       objectReference: {fileID: 173147592}
-    - target: {fileID: 6785922878561011675, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
-        type: 3}
-      propertyPath: keyBoardControl
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f144944ff6eb34bb1f82dbcc56c74a, type: 3}
 --- !u!1001 &7572658579927844736
