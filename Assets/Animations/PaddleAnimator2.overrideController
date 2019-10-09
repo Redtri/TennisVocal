@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PaddleAnimator2
+  m_Controller: {fileID: 9100000, guid: 361a32cea8ee6434297f6cada628e7d1, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 18ebde0ae050dc84ca0449d5c752f00c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b9c5fee4e2fa49a448d9ffa43a36991c, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 78b611041f9a4ee4489c3aad3b820707, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: c4fb8e324eaefd6478334efbef6d57f4, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 251799572c73c1a4cb70d26b9602d1eb, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 0382bb2ea2ce52d458b001e18c6e119c, type: 2}
