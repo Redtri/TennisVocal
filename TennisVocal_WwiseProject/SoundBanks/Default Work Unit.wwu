@@ -7,7 +7,7 @@
 					<ChildrenList>
 						<SoundBank Name="Main" ID="{941A19DA-3F2E-4B6E-8C8C-497FE9CF60A6}">
 							<ObjectInclusionList>
-								<ObjectRef Name="Win" ID="{6625EDD0-09EE-47A9-AA54-C875F658E13F}" WorkUnitID="{0AC7F644-7E10-40A0-AA81-E243A0C40723}" Filter="7" Origin="Manual"/>
+								<ObjectRef Name="All" ID="{D7689D6E-7DA4-4392-B601-22DE7F431404}" WorkUnitID="{0AC7F644-7E10-40A0-AA81-E243A0C40723}" Filter="7" Origin="Manual"/>
 							</ObjectInclusionList>
 							<ObjectExclusionList/>
 							<GameSyncExclusionList/>

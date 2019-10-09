@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 4a42d7e7169bfa48809e83069a2da0dc
     GuidInternal: 
-    m_lastTime: -8586309986444775808
+    m_lastTime: -8586309940904775808
     List:
     - name: Main
       guid: da191a942e3f6e4b8c8c497fe9cf60a6
@@ -49,17 +49,75 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 44f6c70a107ea040aa81e243a0c40723
     GuidInternal: 
-    m_lastTime: -8586309987534775808
+    m_lastTime: -8586309940904775808
     List:
-    - name: Win
-      guid: d0ed2566ee09a947aa54c875f658e13f
-      id: 979765101
+    - name: Loose_Event
+      guid: 7ba73aa1bccccc4a9d71b0128679f0bb
+      id: 694907692
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Win
+      - ElementName: All
+        ObjectType: 4
+      - ElementName: Loose_Event
         ObjectType: 3
-      Path: Default Work Unit/Win
+      Path: Default Work Unit/All/Loose_Event
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music
+      guid: 2b263a5339cc33438e6a3bd3818774c1
+      id: 2932040671
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: All
+        ObjectType: 4
+      - ElementName: Play_Music
+        ObjectType: 3
+      Path: Default Work Unit/All/Play_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TennisBall_Bounce_Event
+      guid: a45f25d48242574684f2e66779c36df5
+      id: 2808149963
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: All
+        ObjectType: 4
+      - ElementName: TennisBall_Bounce_Event
+        ObjectType: 3
+      Path: Default Work Unit/All/TennisBall_Bounce_Event
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TennisBall_Shoot_Event
+      guid: d4bf7f2cb1ef1048a6197c491f814256
+      id: 3581374598
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: All
+        ObjectType: 4
+      - ElementName: TennisBall_Shoot_Event
+        ObjectType: 3
+      Path: Default Work Unit/All/TennisBall_Shoot_Event
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Win_Event
+      guid: d0ed2566ee09a947aa54c875f658e13f
+      id: 4187076448
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: All
+        ObjectType: 4
+      - ElementName: Win_Event
+        ObjectType: 3
+      Path: Default Work Unit/All/Win_Event
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -94,6 +152,8 @@ MonoBehaviour:
   ExpandedItems:
   - /TennisVocal_WwiseProject
   - /TennisVocal_WwiseProject/Events
+  - /TennisVocal_WwiseProject/Events/Default Work Unit
+  - /TennisVocal_WwiseProject/Events/Default Work Unit/All
   - /TennisVocal_WwiseProject/SoundBanks
   - /TennisVocal_WwiseProject/SoundBanks/Default Work Unit
   - /TennisVocal_WwiseProject/SoundBanks/Default Work Unit/All

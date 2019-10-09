@@ -22,6 +22,273 @@
 						<ActiveSource Name="win001" ID="{32304FF7-8401-4E85-A829-2E42436261EF}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="loose001" ID="{D5B28794-0004-4204-8D5C-48B9F3FDC683}" ShortID="364722182">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="loose001" ID="{DE8D8385-9F90-466C-A7C5-7EE0D3DB55F2}" ShortID="486254550">
+							<Language>SFX</Language>
+							<AudioFile>loose001.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="loose001" ID="{DE8D8385-9F90-466C-A7C5-7EE0D3DB55F2}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="TennisVoice_BO_v1" ID="{B87BB8E7-7804-46C2-8703-2EE8A62FA24B}" ShortID="967538783">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TennisVoice_BO_v1" ID="{1B5E9BE4-8B2B-4B30-844A-EC177E5408EC}" ShortID="108321990">
+							<Language>SFX</Language>
+							<AudioFile>TennisVoice_BO_v1.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TennisVoice_BO_v1" ID="{1B5E9BE4-8B2B-4B30-844A-EC177E5408EC}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="TennisBall_Shoot" ID="{160F3C30-4593-47F0-84B9-F9E54D289531}" ShortID="368900886">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B77D4690-0598-4A3D-9284-EA9F990B6607}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="tennisballshoot-002" ID="{18E97A0E-02FE-4B4A-A55E-8A6CFF521433}" ShortID="727980913">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tennisballshoot-002" ID="{70B338C2-669D-46C8-BC6E-5E6A941E88B3}" ShortID="64355678">
+									<Language>SFX</Language>
+									<AudioFile>tennisballshoot-002.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tennisballshoot-002" ID="{70B338C2-669D-46C8-BC6E-5E6A941E88B3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="tennisballshoot-003" ID="{5355B8D8-900D-45FD-A7C7-0213AEF90A7D}" ShortID="822565531">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tennisballshoot-003" ID="{328BDF57-FA38-48A5-B3E5-D1FB2DA8DF1B}" ShortID="607803259">
+									<Language>SFX</Language>
+									<AudioFile>tennisballshoot-003.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tennisballshoot-003" ID="{328BDF57-FA38-48A5-B3E5-D1FB2DA8DF1B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="tennisballshoot-004" ID="{67130EFA-F718-459B-8F0F-7058E5CD8455}" ShortID="367966667">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tennisballshoot-004" ID="{9BD8BFAC-B9F6-46DE-8421-81BE2AC5AD62}" ShortID="856329045">
+									<Language>SFX</Language>
+									<AudioFile>tennisballshoot-004.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tennisballshoot-004" ID="{9BD8BFAC-B9F6-46DE-8421-81BE2AC5AD62}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="tennisballshoot-005" ID="{3CED2EC9-D51F-456F-9CB5-AFCEA768762A}" ShortID="956513260">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tennisballshoot-005" ID="{333905F3-79AF-41ED-B881-C2E5EEC5171E}" ShortID="70086444">
+									<Language>SFX</Language>
+									<AudioFile>tennisballshoot-005.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tennisballshoot-005" ID="{333905F3-79AF-41ED-B881-C2E5EEC5171E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="tennisballshoot-006" ID="{9027EAD9-6A05-4B63-B4A4-339ED062DD56}" ShortID="381076901">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tennisballshoot-006" ID="{42B213B1-88DC-42B0-BA31-A9D3BC360041}" ShortID="762528213">
+									<Language>SFX</Language>
+									<AudioFile>tennisballshoot-006.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tennisballshoot-006" ID="{42B213B1-88DC-42B0-BA31-A9D3BC360041}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="tennisballshoot-007" ID="{1A6F2FDD-04E5-476A-AA8C-132BFFF43869}" ShortID="806458155">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tennisballshoot-007" ID="{B55CBB50-7DA5-4584-9F3C-EB1ED335F60F}" ShortID="735510391">
+									<Language>SFX</Language>
+									<AudioFile>tennisballshoot-007.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tennisballshoot-007" ID="{B55CBB50-7DA5-4584-9F3C-EB1ED335F60F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="TennisBall_Bounce" ID="{1316449E-FDBC-430B-B6D2-1C6B75DD1E1D}" ShortID="140565630">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{66F4807D-ED69-4152-8295-B07FF82396C8}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="tennisballbounce-001" ID="{EDB379BD-A124-41AF-A76E-3066BD18FFC6}" ShortID="506669844">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tennisballbounce-001" ID="{1F51C421-2D49-4427-802A-F0F25BCEFE04}" ShortID="265062356">
+									<Language>SFX</Language>
+									<AudioFile>tennisballbounce-001.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tennisballbounce-001" ID="{1F51C421-2D49-4427-802A-F0F25BCEFE04}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="tennisballbounce-002" ID="{157E3286-2CD6-4985-BAD0-66E06A0C6603}" ShortID="347860087">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tennisballbounce-002" ID="{E0D05A4B-0A8F-4DE9-AFCA-E0CEDF059843}" ShortID="520749101">
+									<Language>SFX</Language>
+									<AudioFile>tennisballbounce-002.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tennisballbounce-002" ID="{E0D05A4B-0A8F-4DE9-AFCA-E0CEDF059843}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="tennisballbounce-003" ID="{BB3D9189-D048-4971-BE68-8E5F85F82870}" ShortID="367053184">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tennisballbounce-003" ID="{0B4488C0-F30F-45FA-BA8B-848658C8AFCD}" ShortID="662428696">
+									<Language>SFX</Language>
+									<AudioFile>tennisballbounce-003.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tennisballbounce-003" ID="{0B4488C0-F30F-45FA-BA8B-848658C8AFCD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

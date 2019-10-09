@@ -21,9 +21,57 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="979765101" Name="Win" ObjectPath="\Events\Default Work Unit\Win" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
+				<Event Id="694907692" Name="Loose_Event" ObjectPath="\Events\Default Work Unit\All\Loose_Event" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\All\Play_Music" DurationType="Infinite"/>
+				<Event Id="2808149963" Name="TennisBall_Bounce_Event" ObjectPath="\Events\Default Work Unit\All\TennisBall_Bounce_Event" DurationType="OneShot" DurationMin="0.552313" DurationMax="1.050227"/>
+				<Event Id="3581374598" Name="TennisBall_Shoot_Event" ObjectPath="\Events\Default Work Unit\All\TennisBall_Shoot_Event" DurationType="OneShot" DurationMin="0.198184" DurationMax="0.977020"/>
+				<Event Id="4187076448" Name="Win_Event" ObjectPath="\Events\Default Work Unit\All\Win_Event" DurationType="OneShot" DurationMin="2.000000" DurationMax="2.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="64355678" Language="SFX">
+					<ShortName>tennisballshoot-002.wav</ShortName>
+					<Path>SFX/tennisballshoot-002_10C4C929.wem</Path>
+				</File>
+				<File Id="70086444" Language="SFX">
+					<ShortName>tennisballshoot-005.wav</ShortName>
+					<Path>SFX/tennisballshoot-005_10C4C929.wem</Path>
+				</File>
+				<File Id="108321990" Language="SFX">
+					<ShortName>TennisVoice_BO_v1.wav</ShortName>
+					<Path>SFX/TennisVoice_BO_v1_D79FB2B7.wem</Path>
+				</File>
+				<File Id="265062356" Language="SFX">
+					<ShortName>tennisballbounce-001.wav</ShortName>
+					<Path>SFX/tennisballbounce-001_10C4C929.wem</Path>
+				</File>
+				<File Id="486254550" Language="SFX">
+					<ShortName>loose001.wav</ShortName>
+					<Path>SFX/loose001_10C4C929.wem</Path>
+				</File>
+				<File Id="520749101" Language="SFX">
+					<ShortName>tennisballbounce-002.wav</ShortName>
+					<Path>SFX/tennisballbounce-002_10C4C929.wem</Path>
+				</File>
+				<File Id="607803259" Language="SFX">
+					<ShortName>tennisballshoot-003.wav</ShortName>
+					<Path>SFX/tennisballshoot-003_10C4C929.wem</Path>
+				</File>
+				<File Id="662428696" Language="SFX">
+					<ShortName>tennisballbounce-003.wav</ShortName>
+					<Path>SFX/tennisballbounce-003_10C4C929.wem</Path>
+				</File>
+				<File Id="735510391" Language="SFX">
+					<ShortName>tennisballshoot-007.wav</ShortName>
+					<Path>SFX/tennisballshoot-007_10C4C929.wem</Path>
+				</File>
+				<File Id="762528213" Language="SFX">
+					<ShortName>tennisballshoot-006.wav</ShortName>
+					<Path>SFX/tennisballshoot-006_10C4C929.wem</Path>
+				</File>
+				<File Id="856329045" Language="SFX">
+					<ShortName>tennisballshoot-004.wav</ShortName>
+					<Path>SFX/tennisballshoot-004_10C4C929.wem</Path>
+				</File>
 				<File Id="1041010884" Language="SFX">
 					<ShortName>win001.wav</ShortName>
 					<Path>SFX/win001_10C4C929.wem</Path>
