@@ -53,7 +53,6 @@ public class InputHandler : MonoBehaviour {
     {
         RefreshAudioSpectrum();
         HandleCapture();
-        //captureState.text = isCapturing + " " + currentInput;
     }
 
     private void RefreshAudioSpectrum() {
@@ -66,7 +65,7 @@ public class InputHandler : MonoBehaviour {
     //ATM : Handles notes capture for the input setting
         if (Input.GetKeyDown(KeyCode.Space)) {
             if (!isCapturing) {
-                captureState.text = "Capture";
+                captureState.text = "Capture " + currentInput;
                 isCapturing = true;
                 inputs.Add(new Note(700/20));
             }
@@ -75,7 +74,7 @@ public class InputHandler : MonoBehaviour {
         if (isCapturing){
             //Timer over
             if (HandleTimer()) {
-                captureState.text = "Stop";
+                captureState.text = "Stop " + currentInput;
                 isCapturing = false;
                 ++currentInput;
             } else {
@@ -83,12 +82,31 @@ public class InputHandler : MonoBehaviour {
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.E)) {
-            for(int i = 0; i < inputs.Count; i++) {
-                Debug.Log(i);
-                foreach(float f in inputs[i].GetSums()) {
-                    Debug.Log(f);
+        if(inputs.Count > 2) {
+            int detected = -1;
+            float sureRatio = 0f;
+
+            for (int i = 0; i < inputs.Count; i++) {
+                if ((sureRatio = inputs[i].Evaluate(_bands)) >= .7f) {
+                    detected = i;
+                    break;
                 }
+            }
+
+            switch (detected) {
+                case 0:
+                    print((eINPUT)detected);
+                    paddle.Move(-1);
+                    break;
+                case 1:
+                    print((eINPUT)detected);
+                    paddle.Move(1);
+                    break;
+                case 2:
+                    print((eINPUT)detected);
+                    break;
+                default:
+                    break;
             }
         }
     }
