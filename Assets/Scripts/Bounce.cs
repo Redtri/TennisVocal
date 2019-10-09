@@ -7,6 +7,7 @@ public class Bounce : MonoBehaviour
 
     [SerializeField] private float bounciness;
     [SerializeField] private Transform reference;
+    public AK.Wwise.Event wwHitEvent;
 
     // Start is called before the first frame update
     void Start()
@@ -31,8 +32,9 @@ public class Bounce : MonoBehaviour
     }
 
     
-    void rebound(Collision collision)
-    {
+    void rebound(Collision collision) {
+
+        wwHitEvent.Post(gameObject);
         Collider ball = collision.collider;
         List<ContactPoint> contactPoints = new List<ContactPoint>();
         Vector3 pointOfImpact;
