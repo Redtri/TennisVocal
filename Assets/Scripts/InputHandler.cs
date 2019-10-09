@@ -7,9 +7,10 @@ public enum eINPUT { LEFT, RIGHT, STRIKE };
 
 public class InputHandler : MonoBehaviour {
 
-    [SerializeField]
-    private Paddle paddle;
-    private Band[] _bands;
+	[SerializeField]
+	private Paddle paddle;
+	[SerializeField]
+	private Band[] bands = new Band[3];
     
 
     //REFERENCES
@@ -25,6 +26,13 @@ public class InputHandler : MonoBehaviour {
     //INPUT DATA
     private eINPUT currentInput;
     private List<Note> inputs;
+	private int _axis = 0;
+	public int axis => _axis;
+	[SerializeField]
+	private float tolerance = 0.5f;
+	[SerializeField]
+	private float strikeTolerance = 0.5f;
+
 
 
     // Start is called before the first frame update
@@ -45,28 +53,57 @@ public class InputHandler : MonoBehaviour {
         isCapturing = false;
 
         currentInput = eINPUT.LEFT;
-        SetBands(700, 20);
-    }
+		
+	}
 
     // Update is called once per frame
     void Update()
     {
-        RefreshAudioSpectrum();
-        HandleCapture();
-        //captureState.text = isCapturing + " " + currentInput;
+
+		RefreshAudioSpectrum();
+		UpdateInput();
+		paddle.Move(_axis);
+       // HandleCapture();
     }
 
     private void RefreshAudioSpectrum() {
-        AudioSpectrumHelper.GetAverageAmplitudes(_source, 4096, _bands);
+        AudioSpectrumHelper.GetAverageAmplitudes(_source, 4096, bands);
         AudioSpectrumHelper.SpectrumDisplay(_source, 4096);
-        AudioSpectrumHelper.BandDisplay(_source, 4096, _bands);
+        AudioSpectrumHelper.BandDisplay(_source, 4096, bands);
     }
+
+	private void UpdateInput()
+	{
+		/*float maxPeak = 0;
+		float maxSum = 0;
+		foreach(Band b in bands)
+		{
+			maxPeak = maxPeak > b.maxPeak ? maxPeak : b.maxPeak;
+			maxSum = maxSum > b.sum ? maxSum : b.sum;
+		}*/
+		_axis = 0;
+		
+		if(bands[2].maxPeak > strikeTolerance)
+		{
+			Debug.Log("Strike");
+			return;
+		}
+
+		if (bands[0].maxPeak > tolerance && bands[0].maxPeak > bands[1].maxPeak)
+		{
+			_axis = 1;
+		}
+		if(bands[1].maxPeak > tolerance && bands[1].maxPeak > bands[0].maxPeak)
+		{
+			_axis = -1;
+		}
+	}
 
     private void HandleCapture() {
     //ATM : Handles notes capture for the input setting
         if (Input.GetKeyDown(KeyCode.Space)) {
             if (!isCapturing) {
-                captureState.text = "Capture";
+                captureState.text = "Capture " + currentInput;
                 isCapturing = true;
                 inputs.Add(new Note(700/20));
             }
@@ -75,20 +112,39 @@ public class InputHandler : MonoBehaviour {
         if (isCapturing){
             //Timer over
             if (HandleTimer()) {
-                captureState.text = "Stop";
+                captureState.text = "Stop " + currentInput;
                 isCapturing = false;
                 ++currentInput;
             } else {
-                inputs[(int)currentInput].SetSums(_bands, Time.deltaTime);
+                inputs[(int)currentInput].SetSums(bands, Time.deltaTime);
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.E)) {
-            for(int i = 0; i < inputs.Count; i++) {
-                Debug.Log(i);
-                foreach(float f in inputs[i].GetSums()) {
-                    Debug.Log(f);
+        if(inputs.Count > 2) {
+            int detected = -1;
+            float sureRatio = 0f;
+
+            for (int i = 0; i < inputs.Count; i++) {
+                if ((sureRatio = inputs[i].Evaluate(bands)) >= .7f) {
+                    detected = i;
+                    break;
                 }
+            }
+
+            switch (detected) {
+                case 0:
+                    print((eINPUT)detected);
+                    paddle.Move(-1);
+                    break;
+                case 1:
+                    print((eINPUT)detected);
+                    paddle.Move(1);
+                    break;
+                case 2:
+                    print((eINPUT)detected);
+                    break;
+                default:
+                    break;
             }
         }
     }
@@ -107,10 +163,10 @@ public class InputHandler : MonoBehaviour {
     }
 
     public void SetBands(int maxHz, int size) {
-        _bands = new Band[maxHz / size];
-        for (int i = 0; i < _bands.Length; i++) {
-            _bands[i].min = i * size;
-            _bands[i].max = (i + 1) * size;
+		bands = new Band[maxHz / size];
+		for (int i = 0; i < maxHz / size; i++) {
+			bands[i].min = i * size;
+			bands[i].max = (i + 1) * size;
         }
     }
 }
