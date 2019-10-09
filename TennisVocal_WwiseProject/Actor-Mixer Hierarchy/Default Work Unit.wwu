@@ -3,44 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{CE43EB54-4164-4423-B870-66BED914A838}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="win001" ID="{9B93DD03-F2AE-4898-AE0A-11AD2862D654}" ShortID="948655790">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="win001" ID="{32304FF7-8401-4E85-A829-2E42436261EF}" ShortID="1041010884">
-							<Language>SFX</Language>
-							<AudioFile>win001.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="win001" ID="{32304FF7-8401-4E85-A829-2E42436261EF}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="loose001" ID="{D5B28794-0004-4204-8D5C-48B9F3FDC683}" ShortID="364722182">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="loose001" ID="{DE8D8385-9F90-466C-A7C5-7EE0D3DB55F2}" ShortID="486254550">
-							<Language>SFX</Language>
-							<AudioFile>loose001.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="loose001" ID="{DE8D8385-9F90-466C-A7C5-7EE0D3DB55F2}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="TennisVoice_BO_v1" ID="{B87BB8E7-7804-46C2-8703-2EE8A62FA24B}" ShortID="967538783">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -289,6 +251,113 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Folder Name="Win" ID="{8F021D60-7E22-46A5-9094-0EA9546F31A0}" ShortID="330103998">
+					<ChildrenList>
+						<RandomSequenceContainer Name="Win_Houra" ID="{416464AD-F66E-4702-9E96-E8BAC34DDC0E}" ShortID="760401968">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{42657B2E-846E-490E-BDC9-91A2AADC294F}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="houra" ID="{B84D5346-10A0-475E-A49A-DDF2333D8B32}" ShortID="1026559009">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="houra" ID="{9C6D4C07-8DDF-4156-AF2A-79A2EAD271F6}" ShortID="868161165">
+											<Language>SFX</Language>
+											<AudioFile>houra.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="houra" ID="{9C6D4C07-8DDF-4156-AF2A-79A2EAD271F6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="houra2" ID="{DC88AFE9-4B63-4D58-B852-BB50C36FF760}" ShortID="127071882">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="houra2" ID="{FF0E4225-E505-4146-8AA1-8CCB4F16C7AF}" ShortID="381420399">
+											<Language>SFX</Language>
+											<AudioFile>houra2.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="houra2" ID="{FF0E4225-E505-4146-8AA1-8CCB4F16C7AF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="houra3" ID="{AAC3E495-A47C-4EA9-8A9F-DE01FE08005C}" ShortID="397979839">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="houra3" ID="{1BBFC15F-398E-4390-8512-28372F6A1302}" ShortID="997599152">
+											<Language>SFX</Language>
+											<AudioFile>houra3.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="houra3" ID="{1BBFC15F-398E-4390-8512-28372F6A1302}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="Win_UI" ID="{73B43080-DDA3-4CB4-AE3A-AD52593F936B}" ShortID="857390337">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Win_UI" ID="{572461BD-8FF3-4F22-B9C9-E20595B18DC9}" ShortID="893195315">
+									<Language>SFX</Language>
+									<AudioFile>Win_UI.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Win_UI" ID="{572461BD-8FF3-4F22-B9C9-E20595B18DC9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -18,14 +18,21 @@ public static class AudioSpectrumHelper
 
 		source.GetSpectrumData(spectrum, 0, FFTWindow.Rectangular);
 
+		for(int i=0; i< bands.Length; i++)
+		{
+			bands[i].maxPeak = 0;
+		}
+
 		for(int i =0; i< spectrum.Length; i++)
 		{
 			for(int c =0; c < bands.Length; c++)
 			{
 				if(i > GetIndex(bands[c].min,spectrum.Length) && i < GetIndex(bands[c].max, spectrum.Length))
 				{
-					sums[c] += (Mathf.Log(spectrum[i]) +10)/10;
+					float value = (Mathf.Log(spectrum[i]) + 10) / 10;
+					sums[c] += value;
 					count[c]++;
+					bands[c].maxPeak = bands[c].maxPeak > value ? bands[c].maxPeak : value;
 				}
 			}
 		}
@@ -77,6 +84,7 @@ public static class AudioSpectrumHelper
 			Debug.DrawRay(new Vector3(GetIndex(b.min, spectrum.Length), 0, 0), Vector3.up * 10, Color.green);
 			Debug.DrawRay(new Vector3(GetIndex(b.max, spectrum.Length), 0, 0), Vector3.up * 10, Color.green);
 			Debug.DrawLine(new Vector3(GetIndex(b.min, spectrum.Length), b.sum * 10, 0), new Vector3(GetIndex(b.max, spectrum.Length), b.sum * 10, 0), Color.green);
+			Debug.DrawLine(new Vector3(GetIndex(b.min, spectrum.Length), b.maxPeak * 10, 0), new Vector3(GetIndex(b.max, spectrum.Length), b.maxPeak * 10, 0), Color.red);
 		}
 	}
 
