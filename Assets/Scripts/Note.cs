@@ -1,4 +1,5 @@
-﻿
+﻿using UnityEngine;
+
 public class Note
 {
 	private float[] sums;
@@ -21,12 +22,27 @@ public class Note
 	public float Evaluate(Band[] bands)
 	{
 		float e = 0;
+		int count = 0;
 		for(int i = 0; i< bands.Length; i++)
 		{
-			e += (sums[i] - bands[i].sum);
+			float delta = Mathf.Abs(sums[i] - bands[i].sum);
+			/*if(sums[i] > 0.25f && bands[i].sum > 0.25f)
+			{
+				e += 1;
+			} */
+			if(delta > 0.1f)
+			{
+				e++;
+			}else
+			{
+
+			}
+			count++;
+			//e += delta;
+			
 		}
-		e /= sums.Length;
-		return e;
+		e /= count;
+		return 1 -e;
 	}
 
 }

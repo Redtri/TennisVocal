@@ -7,7 +7,8 @@ public class AudioInput : MonoBehaviour
 	[SerializeField]
 	private Paddle paddle;
 	[SerializeField]
-	private Band[] bands;
+	private Band[] _bands;
+	public Band[] bands { get { return _bands; } }
 
 	Note test;
 
@@ -28,15 +29,39 @@ public class AudioInput : MonoBehaviour
 		_source.PlayDelayed(0.01f);
 		Debug.Log(AudioSettings.outputSampleRate);
 
-		test = new Note(bands);
+		SetBands(700,20);
+		test = new Note(_bands);
+		
 	}
 
 	private void Update()
 	{
-		AudioSpectrumHelper.GetAverageAmplitudes(_source, 4096, bands);
+		AudioSpectrumHelper.GetAverageAmplitudes(_source, 4096, _bands);
 		AudioSpectrumHelper.SpectrumDisplay(_source, 4096);
-		AudioSpectrumHelper.BandDisplay(_source, 4096, bands);
+		AudioSpectrumHelper.BandDisplay(_source, 4096, _bands);
 
-	
+		if (Input.GetMouseButton(0))
+		{
+			test.SetSums(_bands);
+		}
+		else
+		{
+			float eval = test.Evaluate(_bands);
+			if(eval > 0.7)
+			{
+				Debug.Log("AAAAAH");
+			}
+		
+		}
+	}
+
+	public void SetBands(int maxHz, int size)
+	{
+		_bands = new Band[maxHz / size];
+		for(int i =0; i< _bands.Length; i++)
+		{
+			_bands[i].min = i * size;
+			_bands[i].max = (i + 1) * size;
+		}
 	}
 }

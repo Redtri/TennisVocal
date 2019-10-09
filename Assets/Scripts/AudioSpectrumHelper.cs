@@ -24,7 +24,7 @@ public static class AudioSpectrumHelper
 			{
 				if(i > GetIndex(bands[c].min,spectrum.Length) && i < GetIndex(bands[c].max, spectrum.Length))
 				{
-					sums[c] += spectrum[i];
+					sums[c] += (Mathf.Log(spectrum[i]) +10)/10;
 					count[c]++;
 				}
 			}
@@ -33,7 +33,7 @@ public static class AudioSpectrumHelper
 		for (int i = 0; i < bands.Length; i++)
 		{
 			float nSum = count[i] > 0 ? sums[i] / count[i] : 0;
-			bands[i].sum = Mathf.Lerp(bands[i].sum, 1- (nSum-1)*(nSum - 1), BAND_SMOOTHNESS *60 * Time.deltaTime) ;
+			bands[i].sum = Mathf.Clamp01( Mathf.Lerp(bands[i].sum, nSum/* 1- (nSum-1)*(nSum - 1)*/, BAND_SMOOTHNESS *60 * Time.deltaTime));
 		}
 	}
 
