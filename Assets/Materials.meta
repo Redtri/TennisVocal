@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/DecodedBanks.meta
+guid: adfd085eb3ba34228a80817cf3499dbb
+=======
 guid: 77dd84f5d0780444098df7169ff13fc3
+>>>>>>> aa44f0af3e613589407d9bfa7d71daa02f660ce3:Assets/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

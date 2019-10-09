@@ -7,21 +7,17 @@
 					<ChildrenList>
 						<Event Name="Win_Event" ID="{6625EDD0-09EE-47A9-AA54-C875F658E13F}">
 							<ChildrenList>
-								<Action Name="" ID="{321541C5-CFE2-485D-B17F-32FE088421DD}" ShortID="188772569">
+								<Action Name="" ID="{3BB36DD3-05EA-4F6F-A80B-A2C3A21334CA}" ShortID="931504749">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="win001" ID="{9B93DD03-F2AE-4898-AE0A-11AD2862D654}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+											<ObjectRef Name="Win_Houra" ID="{416464AD-F66E-4702-9E96-E8BAC34DDC0E}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Loose_Event" ID="{A13AA77B-CCBC-4ACC-9D71-B0128679F0BB}">
-							<ChildrenList>
-								<Action Name="" ID="{50A6C5EB-E18A-4708-AAA3-A293FDC7CC1C}" ShortID="969215805">
+								<Action Name="" ID="{B2C89B17-BDD1-4AC6-A605-09A1F808D8EC}" ShortID="287616617">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="loose001" ID="{D5B28794-0004-4204-8D5C-48B9F3FDC683}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+											<ObjectRef Name="Win_UI" ID="{73B43080-DDA3-4CB4-AE3A-AD52593F936B}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
