@@ -3,17 +3,65 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{0AC7F644-7E10-40A0-AA81-E243A0C40723}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Win" ID="{6625EDD0-09EE-47A9-AA54-C875F658E13F}">
+				<Folder Name="All" ID="{D7689D6E-7DA4-4392-B601-22DE7F431404}" ShortID="930692163">
 					<ChildrenList>
-						<Action Name="" ID="{321541C5-CFE2-485D-B17F-32FE088421DD}" ShortID="188772569">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="win001" ID="{9B93DD03-F2AE-4898-AE0A-11AD2862D654}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Win_Event" ID="{6625EDD0-09EE-47A9-AA54-C875F658E13F}">
+							<ChildrenList>
+								<Action Name="" ID="{321541C5-CFE2-485D-B17F-32FE088421DD}" ShortID="188772569">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="win001" ID="{9B93DD03-F2AE-4898-AE0A-11AD2862D654}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Loose_Event" ID="{A13AA77B-CCBC-4ACC-9D71-B0128679F0BB}">
+							<ChildrenList>
+								<Action Name="" ID="{50A6C5EB-E18A-4708-AAA3-A293FDC7CC1C}" ShortID="969215805">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="loose001" ID="{D5B28794-0004-4204-8D5C-48B9F3FDC683}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Music" ID="{533A262B-CC39-4333-8E6A-3BD3818774C1}">
+							<ChildrenList>
+								<Action Name="" ID="{725639F7-E3EB-4E20-A70A-CB56BB94022D}" ShortID="512362699">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TennisVoice_BO_v1" ID="{B87BB8E7-7804-46C2-8703-2EE8A62FA24B}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TennisBall_Shoot_Event" ID="{2C7FBFD4-EFB1-4810-A619-7C491F814256}">
+							<ChildrenList>
+								<Action Name="" ID="{00DB884E-EEB8-4BE6-A379-5D9CF619C047}" ShortID="38691507">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TennisBall_Shoot" ID="{160F3C30-4593-47F0-84B9-F9E54D289531}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TennisBall_Bounce_Event" ID="{D4255FA4-4282-4657-84F2-E66779C36DF5}">
+							<ChildrenList>
+								<Action Name="" ID="{D81FE599-F907-4C02-A2E1-A18CE4DF5A0E}" ShortID="830049362">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TennisBall_Bounce" ID="{1316449E-FDBC-430B-B6D2-1C6B75DD1E1D}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
