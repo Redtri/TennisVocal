@@ -5,7 +5,7 @@ using UnityEngine;
 public class Paddle : MonoBehaviour
 {
 	private IInput inputs;
-	public Terrain terrain;
+	private Terrain terrain;
 	public int caseNumber = 10;
 	public int startCase = 5;
 
@@ -21,6 +21,7 @@ public class Paddle : MonoBehaviour
 	private void Awake()
 	{
 		inputs = GetComponent<IInput>();
+		terrain = FindObjectOfType<Terrain>();
 		_currentCase = startCase;
 		_startPos = transform.position;
 	}
@@ -54,6 +55,6 @@ public class Paddle : MonoBehaviour
 		}
 		Move(inputs.axis);
 
-		transform.position = GetPosition();
+		transform.parent.position = GetPosition();
     }
 }
