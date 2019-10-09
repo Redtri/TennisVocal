@@ -974,7 +974,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &943948400
 Transform:
   m_ObjectHideFlags: 0
@@ -1023,12 +1023,12 @@ PrefabInstance:
     - target: {fileID: 6358126293035541118, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
         type: 3}
       propertyPath: m_Name
-      value: PaddleFull_002
+      value: J2
       objectReference: {fileID: 0}
     - target: {fileID: 6358126293035541118, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6358126293035541117, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
         type: 3}
@@ -1095,6 +1095,12 @@ PrefabInstance:
       propertyPath: keyBoardControl
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6785922878561011675, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
+        type: 3}
+      propertyPath: playerBands
+      value: 
+      objectReference: {fileID: 11400000, guid: 65bb218fda9be144d9acc742ddcfb9d2,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8f144944ff6eb34bb1f82dbcc56c74a, type: 3}
 --- !u!1 &1140684730
@@ -1565,7 +1571,7 @@ PrefabInstance:
     - target: {fileID: 6358126293035541118, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
         type: 3}
       propertyPath: m_Name
-      value: PaddleFull_001
+      value: J1
       objectReference: {fileID: 0}
     - target: {fileID: 6358126293035541118, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
         type: 3}
@@ -1631,6 +1637,22 @@ PrefabInstance:
         type: 3}
       propertyPath: keyBoardControl
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785922878561011675, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
+        type: 3}
+      propertyPath: playerBands
+      value: 
+      objectReference: {fileID: 11400000, guid: fb0cabcc7ce56804e903174d5460ee45,
+        type: 2}
+    - target: {fileID: 6785922878561011675, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
+        type: 3}
+      propertyPath: tolerance
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6785922878561011675, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
+        type: 3}
+      propertyPath: strikeTolerance
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 1492948106059091271, guid: e8f144944ff6eb34bb1f82dbcc56c74a,
         type: 3}

@@ -7,7 +7,9 @@ public class InputHandler : MonoBehaviour, IInput {
 
 	public int micIndex = 0;
 	public bool keyBoardControl = false;
-	[SerializeField]
+
+	public PlayerBands playerBands;
+
 	private Band[] bands = new Band[3];
    
     private AudioSource _source;
@@ -36,22 +38,16 @@ public class InputHandler : MonoBehaviour, IInput {
         _source.clip = _clip;
         _source.PlayDelayed(0.01f);
         Debug.Log(AudioSettings.outputSampleRate);
-		bands[2].min = 0;
-		bands[2].max = 0;
 	}
 
     void Update()
     {
+		playerBands.UpdateBands(_source, 4096);
+		bands = playerBands.GetBands();
 		RefreshAudioSpectrum();
-		if (Input.GetKey(KeyCode.W))
-		{
-			Capture(0, 500, 40);
-		}
-		if (Input.GetKey(KeyCode.X))
-		{
-			Capture(1, 500, 40);
-		}
-
+		
+		playerBands.UpdateValue(bands);
+		
 		if (keyBoardControl)
 		{
 			UpdateKeyboardInput();
@@ -81,38 +77,12 @@ public class InputHandler : MonoBehaviour, IInput {
 		}
 	}
 
-	private void Capture(int index, int maxHz,  int bandSize)
-	{
-		Band[] bs= new Band[maxHz/bandSize];
-		for(int i = 0; i < bs.Length; i++)
-		{
-			bs[i].min = i * bandSize;
-			bs[i].max = (i + 1) * bandSize;
-		}
-
-		AudioSpectrumHelper.GetAverageAmplitudes(_source, 4096, bs);
-		AudioSpectrumHelper.BandDisplay(_source, 4096, bs);
-		int highest = 0;
-		for(int i = 0; i< bs.Length; i++)
-		{
-			if(bs[i].maxPeak > 0.5f)
-			{
-				highest = i;
-				break;
-			}
-		}
-
-		bands[index].min = bs[highest].min;
-		bands[index].max = bs[highest].max;
-		bands[2].min = bands[0].min;
-		bands[2].max = bands[1].max;
-	}
 
 	private void UpdateMicInput()
 	{
 		_axis = 0;
-		
-		if (bands[2].maxPeak > strikeTolerance)
+
+		if (playerBands.strikeBand.maxPeak > strikeTolerance)
 		{
 			if (!wasStriking)
 			{
@@ -132,11 +102,11 @@ public class InputHandler : MonoBehaviour, IInput {
 			_power = 0;
 		}
 
-		if (bands[0].maxPeak > tolerance && bands[0].maxPeak > bands[1].maxPeak)
+		if (playerBands.low.maxPeak > tolerance && playerBands.low.maxPeak > playerBands.high.maxPeak)
 		{
 			_axis = 1;
 		}
-		if(bands[1].maxPeak > tolerance && bands[1].maxPeak > bands[0].maxPeak)
+		if(playerBands.high.maxPeak > tolerance && playerBands.high.maxPeak > playerBands.low.maxPeak)
 		{
 			_axis = -1;
 		}

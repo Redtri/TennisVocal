@@ -47,11 +47,9 @@ public class Paddle : MonoBehaviour
 
     void Update()
     {
-		
 		if(inputs.power > 0)
 		{
 			onStrike?.Invoke(inputs.power);
-			Debug.Log("Strike");
 		}
 		Move(inputs.axis);
 

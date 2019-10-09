@@ -5,24 +5,28 @@ public class PlayerBands : ScriptableObject
 {
 	public Band low;
 	public Band high;
+	public Band strikeBand;
 
 	public KeyCode lowKey = KeyCode.W;
 	public KeyCode highKey = KeyCode.X;
 
-	public void Update(AudioSource src,int length)
+	public void UpdateBands(AudioSource src,int length)
 	{
 		if (Input.GetKey(lowKey))
 		{
-
+			low = Capture(low, src, 500, 40, length);
 		}
 
 		if (Input.GetKey(highKey))
 		{
-
+			high = Capture(high, src, 500, 40, length);
 		}
+
+		strikeBand.min = low.min;
+		strikeBand.max = high.max;
 	}
 
-	private void Capture(Band b, AudioSource src, int maxHz, int bandSize)
+	private Band Capture(Band b, AudioSource src, int maxHz, int bandSize, int length)
 	{
 		Band[] bs = new Band[maxHz / bandSize];
 		for (int i = 0; i < bs.Length; i++)
@@ -31,8 +35,9 @@ public class PlayerBands : ScriptableObject
 			bs[i].max = (i + 1) * bandSize;
 		}
 
-		AudioSpectrumHelper.GetAverageAmplitudes(src, 4096, bs);
-		AudioSpectrumHelper.BandDisplay(src, 4096, bs);
+		AudioSpectrumHelper.GetAverageAmplitudes(src, length, bs);
+		AudioSpectrumHelper.SpectrumDisplay(src, length);
+		AudioSpectrumHelper.BandDisplay(src, length, bs);
 		int highest = 0;
 		for (int i = 0; i < bs.Length; i++)
 		{
@@ -45,5 +50,18 @@ public class PlayerBands : ScriptableObject
 
 		b.min = bs[highest].min;
 		b.max = bs[highest].max;
+		return b;
+	}
+
+	public Band[] GetBands()
+	{
+		return new Band[] { low, high, strikeBand };
+	}
+
+	public void UpdateValue(Band[] bands)
+	{
+		low = bands[0];
+		high = bands[1];
+		strikeBand = bands[2];
 	}
 }
