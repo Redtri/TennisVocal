@@ -1013,7 +1013,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d87812197df0c634982988be99aa54aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 344931437}
 --- !u!1001 &1046231660
 PrefabInstance:
   m_ObjectHideFlags: 0
