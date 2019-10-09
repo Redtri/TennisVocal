@@ -35,21 +35,21 @@ public class AudioInput : MonoBehaviour
 			paddle.Move(-1);
 		}else
 		{
-			if (isIIIIH())
+			if (IsIIIIH())
 			{
 				Debug.Log("IIIIH");
 				paddle.Move(1);
 			}
 			else
 			{
-				if (ISAAAAH()){
+				if (IsAAAAH()){
 					Debug.Log("AAAAAh");
 				}
 			}
 		}
 	}
 
-	private bool ISAAAAH()
+	private bool IsAAAAH()
 	{
 		if (bands[3].sum > 0.05f && bands[3].sum > bands[2].sum && bands[3].sum > bands[1].sum)
 		{
@@ -67,7 +67,7 @@ public class AudioInput : MonoBehaviour
 		return false;
 	}
 
-	private bool isIIIIH()
+	private bool IsIIIIH()
 	{
 		if (bands[2].sum > 0.05f && bands[2].sum > bands[1].sum && bands[2].sum > bands[3].sum)
 		{
