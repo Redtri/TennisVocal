@@ -526,25 +526,6 @@
 						<ActiveSource Name="TennisVoice_Menu_v3" ID="{8DE42ECA-10C3-42A0-8452-FA7CD8EEC448}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Choose_UI" ID="{1D7CE98C-F36A-4AA2-A2FF-86E9F1E7ADBF}" ShortID="26297892">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Choose_UI" ID="{C5B38EA6-71B3-475E-8E92-058EA2B0BF2C}" ShortID="26845653">
-							<Language>SFX</Language>
-							<AudioFile>Choose_UI.wav</AudioFile>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Choose_UI" ID="{C5B38EA6-71B3-475E-8E92-058EA2B0BF2C}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="VS_Drop" ID="{E9F6F20F-D3AD-4B11-97D3-46D8E62B218F}" ShortID="200804287">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -581,6 +562,32 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="VS_Schling" ID="{89F9B446-CB57-4FD1-AFCC-039E6A29BCBD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Choose_UI_v2" ID="{654F1C4E-C1FA-4E7F-A73D-D00B87CE037C}" ShortID="159772046">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Choose_UI_v2" ID="{5953EF20-CB8C-4883-872B-D3257A5D56F4}" ShortID="1035272604">
+							<Language>SFX</Language>
+							<AudioFile>Choose_UI_v2.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Choose_UI_v2" ID="{5953EF20-CB8C-4883-872B-D3257A5D56F4}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

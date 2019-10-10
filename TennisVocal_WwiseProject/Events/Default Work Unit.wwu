@@ -80,10 +80,10 @@
 						</Event>
 						<Event Name="UI_Click_Event" ID="{BD88F992-1B9B-4CC4-8E1B-C2EF6A6CEA63}">
 							<ChildrenList>
-								<Action Name="" ID="{F49F2D45-9435-4589-804C-1ACBF18180EE}" ShortID="682233119">
+								<Action Name="" ID="{333C50F2-56F7-4DE0-87FD-6F5882E223DC}" ShortID="830251674">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Choose_UI" ID="{1D7CE98C-F36A-4AA2-A2FF-86E9F1E7ADBF}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+											<ObjectRef Name="Choose_UI_v2" ID="{654F1C4E-C1FA-4E7F-A73D-D00B87CE037C}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
