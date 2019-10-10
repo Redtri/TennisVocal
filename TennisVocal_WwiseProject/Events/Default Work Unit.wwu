@@ -111,6 +111,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Elastic_Event" ID="{D0CD947F-460A-4934-A6B8-E8937946E069}">
+							<ChildrenList>
+								<Action Name="" ID="{08589E41-BC12-4875-B0DE-878AF18ED4C6}" ShortID="43587574">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="elastic" ID="{F4C2038A-93F3-463C-A578-1BE05C105EDA}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Flute_Event" ID="{4E6FC34B-68B7-48A9-B693-7B0BDC9164E7}">
+							<ChildrenList>
+								<Action Name="" ID="{DD84D39F-1174-40CA-8053-0D01E587421A}" ShortID="493766283">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="whislte" ID="{41D71EB1-D1CE-4D3F-8B0C-36AE01689DBA}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Blink_Event" ID="{F6F7D915-5977-4E1F-A050-9849786A6A27}">
+							<ChildrenList>
+								<Action Name="" ID="{39629D82-2D55-41C0-B4A3-3949F3C37AF5}" ShortID="408648827">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="blink" ID="{9EA8091A-C871-4193-94F7-52A44609E0DA}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

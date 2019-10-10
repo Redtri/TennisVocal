@@ -21,6 +21,9 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="98341100" Name="Blink_Event" ObjectPath="\Events\Default Work Unit\All\Blink_Event" DurationType="OneShot" DurationMin="0.267029" DurationMax="0.267029"/>
+				<Event Id="2926451587" Name="Elastic_Event" ObjectPath="\Events\Default Work Unit\All\Elastic_Event" DurationType="OneShot" DurationMin="2.437506" DurationMax="2.437506"/>
+				<Event Id="2391953836" Name="Flute_Event" ObjectPath="\Events\Default Work Unit\All\Flute_Event" DurationType="OneShot" DurationMin="0.990249" DurationMax="0.990249"/>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\All\Play_Music" DurationType="Infinite"/>
 				<Event Id="1699343283" Name="Play_Music_Menu" ObjectPath="\Events\Default Work Unit\All\Play_Music_Menu" DurationType="Infinite"/>
 				<Event Id="2808149963" Name="TennisBall_Bounce_Event" ObjectPath="\Events\Default Work Unit\All\TennisBall_Bounce_Event" DurationType="OneShot" DurationMin="0.552313" DurationMax="1.050227"/>
@@ -32,6 +35,10 @@
 				<Event Id="4187076448" Name="Win_Event" ObjectPath="\Events\Default Work Unit\All\Win_Event" DurationType="OneShot" DurationMin="4.247434" DurationMax="4.767584"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="20266953" Language="SFX">
+					<ShortName>blink.wav</ShortName>
+					<Path>SFX/blink_10C4C929.wem</Path>
+				</File>
 				<File Id="64355678" Language="SFX">
 					<ShortName>tennisballshoot-002.wav</ShortName>
 					<Path>SFX/tennisballshoot-002_10C4C929.wem</Path>
@@ -56,6 +63,10 @@
 					<ShortName>houra2.wav</ShortName>
 					<Path>SFX/houra2_10C4C929.wem</Path>
 				</File>
+				<File Id="453686430" Language="SFX">
+					<ShortName>elastic.wav</ShortName>
+					<Path>SFX/elastic_10C4C929.wem</Path>
+				</File>
 				<File Id="479200981" Language="SFX">
 					<ShortName>REC.cm_01.wav</ShortName>
 					<Path>SFX/REC.cm_01_10C4C929.wem</Path>
@@ -67,6 +78,10 @@
 				<File Id="520749101" Language="SFX">
 					<ShortName>tennisballbounce-002.wav</ShortName>
 					<Path>SFX/tennisballbounce-002_10C4C929.wem</Path>
+				</File>
+				<File Id="577909511" Language="SFX">
+					<ShortName>whislte.wav</ShortName>
+					<Path>SFX/whislte_10C4C929.wem</Path>
 				</File>
 				<File Id="607803259" Language="SFX">
 					<ShortName>tennisballshoot-003.wav</ShortName>

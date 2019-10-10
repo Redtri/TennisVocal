@@ -1,8 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
+	98341100	Blink_Event			\Default Work Unit\All\Blink_Event	
 	1210062646	VS_Anim_2_Event			\Default Work Unit\All\VS_Anim_2_Event	
 	1699343283	Play_Music_Menu			\Default Work Unit\All\Play_Music_Menu	
+	2391953836	Flute_Event			\Default Work Unit\All\Flute_Event	
 	2528159659	UI_Click_Event			\Default Work Unit\All\UI_Click_Event	
 	2808149963	TennisBall_Bounce_Event			\Default Work Unit\All\TennisBall_Bounce_Event	
+	2926451587	Elastic_Event			\Default Work Unit\All\Elastic_Event	
 	2932040671	Play_Music			\Default Work Unit\All\Play_Music	
 	3574916797	VS_Anim_Event			\Default Work Unit\All\VS_Anim_Event	
 	3581374598	TennisBall_Shoot_Event			\Default Work Unit\All\TennisBall_Shoot_Event	
@@ -10,15 +13,18 @@ Event	ID	Name			Wwise Object Path	Notes
 	4187076448	Win_Event			\Default Work Unit\All\Win_Event	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	20266953	blink	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\blink_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\blink		47168
 	64355678	tennisballshoot-002	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\tennisballshoot-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Shoot\tennisballshoot-002		152424
 	70086444	tennisballshoot-005	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\tennisballshoot-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Shoot\tennisballshoot-005		160900
 	108321990	TennisVoice_BO_v1	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\TennisVoice_BO_v1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisVoice_BO_v1		21390888
 	265062356	tennisballbounce-001	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\tennisballbounce-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Bounce\tennisballbounce-001		165112
 	370582841	REC_cm_07	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\REC.cm_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Hover\REC_cm_07		32626
 	381420399	houra2	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\houra2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Win\Win_Houra\houra2		793864
+	453686430	elastic	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\elastic_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\elastic		430040
 	479200981	REC_cm_01	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\REC.cm_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Hover\REC_cm_01		40048
 	512665687	VS_Drop	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\VS_Drop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VS_Drop		390004
 	520749101	tennisballbounce-002	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\tennisballbounce-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Bounce\tennisballbounce-002		97492
+	577909511	whislte	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\whislte_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\whislte		174744
 	607803259	tennisballshoot-003	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\tennisballshoot-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Shoot\tennisballshoot-003		95316
 	630538930	REC_cm_02	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\REC.cm_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Hover\REC_cm_02		22614
 	662428696	tennisballbounce-003	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\tennisballbounce-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Bounce\tennisballbounce-003		104852

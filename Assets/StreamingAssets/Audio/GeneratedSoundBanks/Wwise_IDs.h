@@ -13,6 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID BLINK_EVENT = 98341100U;
+        static const AkUniqueID ELASTIC_EVENT = 2926451587U;
+        static const AkUniqueID FLUTE_EVENT = 2391953836U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
         static const AkUniqueID PLAY_MUSIC_MENU = 1699343283U;
         static const AkUniqueID TENNISBALL_BOUNCE_EVENT = 2808149963U;

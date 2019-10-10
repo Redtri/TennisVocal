@@ -590,6 +590,63 @@
 						<ActiveSource Name="Choose_UI_v2" ID="{5953EF20-CB8C-4883-872B-D3257A5D56F4}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="blink" ID="{9EA8091A-C871-4193-94F7-52A44609E0DA}" ShortID="77008461">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="blink" ID="{6DAD9759-F930-4852-8B9A-2006ADD60A5B}" ShortID="20266953">
+							<Language>SFX</Language>
+							<AudioFile>blink.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="blink" ID="{6DAD9759-F930-4852-8B9A-2006ADD60A5B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="elastic" ID="{F4C2038A-93F3-463C-A578-1BE05C105EDA}" ShortID="427614823">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="elastic" ID="{37903242-4DC1-49CB-802A-5B0D01120D7C}" ShortID="453686430">
+							<Language>SFX</Language>
+							<AudioFile>elastic.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="elastic" ID="{37903242-4DC1-49CB-802A-5B0D01120D7C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="whislte" ID="{41D71EB1-D1CE-4D3F-8B0C-36AE01689DBA}" ShortID="578931621">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="whislte" ID="{AC8EBCAB-887B-4173-AF81-5C8924966155}" ShortID="577909511">
+							<Language>SFX</Language>
+							<AudioFile>whislte.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="whislte" ID="{AC8EBCAB-887B-4173-AF81-5C8924966155}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
