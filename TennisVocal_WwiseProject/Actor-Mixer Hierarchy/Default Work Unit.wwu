@@ -358,6 +358,166 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<RandomSequenceContainer Name="UI_Hover" ID="{28B1E4FA-1352-45EF-BCD4-6E85CCAB1AAF}" ShortID="543296613">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="tennisballbounce-001" ID="{5D5CAC45-9036-4717-825C-96BC7FC7FFC7}" ShortID="1009281197">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tennisballbounce-001" ID="{33D21234-A775-4D90-B7BA-59F858326615}" ShortID="902503147">
+									<Language>SFX</Language>
+									<AudioFile>tennisballbounce-001.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="265062356"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tennisballbounce-001" ID="{33D21234-A775-4D90-B7BA-59F858326615}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="tennisballbounce-002" ID="{AF3F375F-5EAE-4424-B6A3-053703EB2826}" ShortID="683838881">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tennisballbounce-002" ID="{16CD4744-528E-4C8C-8C9E-2D5C0793E55A}" ShortID="797052166">
+									<Language>SFX</Language>
+									<AudioFile>tennisballbounce-002.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="520749101"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tennisballbounce-002" ID="{16CD4744-528E-4C8C-8C9E-2D5C0793E55A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="tennisballbounce-003" ID="{D90F14DB-A49C-47A0-BDF2-001EEF506AB7}" ShortID="700670746">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="tennisballbounce-003" ID="{1EF27F13-5043-46BB-9A10-0F51C503C64D}" ShortID="236856157">
+									<Language>SFX</Language>
+									<AudioFile>tennisballbounce-003.wav</AudioFile>
+									<ConvertedFileIDList>
+										<File ID="662428696"/>
+									</ConvertedFileIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="tennisballbounce-003" ID="{1EF27F13-5043-46BB-9A10-0F51C503C64D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<Sound Name="Win_UI" ID="{7418D74D-4C7E-4941-BE08-12C9ACEAF5AB}" ShortID="920656782">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Win_UI" ID="{A1265FED-48D4-484C-83DE-AD0578D5DB10}" ShortID="978353512">
+							<Language>SFX</Language>
+							<AudioFile>Win_UI.wav</AudioFile>
+							<ConvertedFileIDList>
+								<File ID="893195315"/>
+							</ConvertedFileIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Win_UI" ID="{A1265FED-48D4-484C-83DE-AD0578D5DB10}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="TennisVoice_Menu_v3" ID="{8BCAFB89-077A-4122-9786-CCCE299639AA}" ShortID="12698869">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TennisVoice_Menu_v3" ID="{8DE42ECA-10C3-42A0-8452-FA7CD8EEC448}" ShortID="1062229721">
+							<Language>SFX</Language>
+							<AudioFile>TennisVoice_Menu_v3.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TennisVoice_Menu_v3" ID="{8DE42ECA-10C3-42A0-8452-FA7CD8EEC448}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Choose_UI" ID="{1D7CE98C-F36A-4AA2-A2FF-86E9F1E7ADBF}" ShortID="26297892">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Choose_UI" ID="{C5B38EA6-71B3-475E-8E92-058EA2B0BF2C}" ShortID="26845653">
+							<Language>SFX</Language>
+							<AudioFile>Choose_UI.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Choose_UI" ID="{C5B38EA6-71B3-475E-8E92-058EA2B0BF2C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="VS_Drop" ID="{E9F6F20F-D3AD-4B11-97D3-46D8E62B218F}" ShortID="200804287">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="VS_Drop" ID="{31FD3796-1451-4B13-89A1-52B0F0DA16D8}" ShortID="512665687">
+							<Language>SFX</Language>
+							<AudioFile>VS_Drop.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="VS_Drop" ID="{31FD3796-1451-4B13-89A1-52B0F0DA16D8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

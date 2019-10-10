@@ -1,15 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class UI_GameMenu : MonoBehaviour
 {
 	public GameObject menu;
 	public GameObject versus;
+	public GameObject end;
+	public Button resumButton;
+
 
 	private void OnEnable()
 	{
-		FindObjectOfType<GameManager>().onService += OnService;
-		FindObjectOfType<GameManager>().onPause += OnPause;
+        GameManager.instance.onService += OnService;
+        GameManager.instance.onPause += OnPause;
+        GameManager.instance.onEnd += OnEnd;
+        resumButton.onClick.AddListener(Resume);
 	}
 
 
@@ -17,7 +23,7 @@ public class UI_GameMenu : MonoBehaviour
 	{
 		GameManager.instance.onService -= OnService;
 		GameManager.instance.onPause -= OnPause;
-
+		resumButton.onClick.RemoveListener(Resume);
 	}
 
 	private void OnService(int playerIndex)
@@ -25,11 +31,18 @@ public class UI_GameMenu : MonoBehaviour
 		SetVersus(false);
 	}
 
-
 	private void OnPause(bool isPause)
 	{
 		SetMenu(isPause);
 	}
+
+    private void OnEnd() {
+        SetEnd(true);
+    }
+
+    private void SetEnd(bool b) {
+        end.SetActive(b);
+    }
 
 	private void SetVersus(bool b)
 	{
@@ -38,7 +51,11 @@ public class UI_GameMenu : MonoBehaviour
 
 	private void SetMenu(bool b)
 	{
-		Debug.Log("menu");
 		menu.SetActive(b);
+	}
+
+	private void Resume()
+	{
+		SetMenu(false);
 	}
 }

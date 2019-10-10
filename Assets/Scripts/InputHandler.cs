@@ -20,12 +20,14 @@ public class InputHandler : MonoBehaviour, IInput {
 	private float _power = 0;
 	public float power => _power;
 
-	[SerializeField]
-	private float tolerance = 0.5f;
-	[SerializeField]
-	private float strikeTolerance = 0.5f;
+	//private float tolerance = 0.5f;
+	//private float strikeTolerance = 0.5f;
 
 	private bool wasStriking = false;
+
+	public float lowNormalized { get; private set; }
+	public float highNormalized { get; private set; }
+	public float strikeNormalized { get; private set; }
 
 
     void Awake()
@@ -82,7 +84,11 @@ public class InputHandler : MonoBehaviour, IInput {
 	{
 		_axis = 0;
 
-		if (playerBands.strikeBand.maxPeak > strikeTolerance)
+		lowNormalized = scale(0, playerBands.tolerance+0.1f, 0, 1, playerBands.low.maxPeak);
+		highNormalized = scale(0, playerBands.tolerance + 0.1f, 0, 1, playerBands.high.maxPeak);
+		strikeNormalized = scale(0, playerBands.strikeTolerance + 0.1f, 0, 1, playerBands.strikeBand.maxPeak);
+
+		if (playerBands.strikeBand.maxPeak > playerBands.strikeTolerance)
 		{
 			if (!wasStriking)
 			{
@@ -102,13 +108,24 @@ public class InputHandler : MonoBehaviour, IInput {
 			_power = 0;
 		}
 
-		if (playerBands.low.maxPeak > tolerance && playerBands.low.maxPeak > playerBands.high.maxPeak)
+		if (playerBands.low.maxPeak > playerBands.tolerance && playerBands.low.maxPeak > playerBands.high.maxPeak)
 		{
 			_axis = 1;
 		}
-		if(playerBands.high.maxPeak > tolerance && playerBands.high.maxPeak > playerBands.low.maxPeak)
+		if(playerBands.high.maxPeak > playerBands.tolerance && playerBands.high.maxPeak > playerBands.low.maxPeak)
 		{
 			_axis = -1;
 		}
 	}
+
+	public float scale(float OldMin, float OldMax, float NewMin, float NewMax, float OldValue)
+	{
+
+		float OldRange = (OldMax - OldMin);
+		float NewRange = (NewMax - NewMin);
+		float NewValue = (((OldValue - OldMin) * NewRange) / OldRange) + NewMin;
+
+		return (NewValue);
+	}
+
 }
