@@ -3,12 +3,17 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{97333179-F462-4D84-85FB-9A08AE206D39}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\Cours ENJMIN\TennisVoice\SB\Edited\Houra"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\Cours ENJMIN\TennisVoice\SB\Edited"/>
 				<Property Name="Event Action List\{2C7FBFD4-EFB1-4810-A619-7C491F814256}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{533A262B-CC39-4333-8E6A-3BD3818774C1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6625EDD0-09EE-47A9-AA54-C875F658E13F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{6D54637F-14DB-4817-8307-80F4B8B6A48D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{9F056F50-74FE-4DDC-81E7-86C8A46267E7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A13AA77B-CCBC-4ACC-9D71-B0128679F0BB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B9A2690A-FE6F-42BE-8B24-7B2F08F3BAF4}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BD88F992-1B9B-4CC4-8E1B-C2EF6A6CEA63}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{D4255FA4-4282-4657-84F2-E66779C36DF5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E20C3DF5-3F13-417A-823E-D6BBCC653A44}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -60,10 +65,10 @@
 				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="RPbHChB+oECqgeJDoMQHI26daNekfZJDtgEi3n9DFAQ="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
-				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="SkLX5xab+kiAnoMGmi2g3A=="/>
+				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="ZMyFR2KN80i57E7YE0/b2kpC1+cWm/pIgJ6DBpotoNw="/>
 				<Property Name="ProjectExplorer\x64_Expanded_7_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_8_1" Type="string" Value=""/>
-				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="SkLX5xab+kiAnoMGmi2g3A=="/>
+				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value="SkLX5xab+kiAnoMGmi2g3GTMhUdijfNIuexO2BNP29o="/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>

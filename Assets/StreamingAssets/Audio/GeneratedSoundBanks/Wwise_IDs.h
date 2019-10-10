@@ -14,8 +14,12 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAY_MUSIC_MENU = 1699343283U;
         static const AkUniqueID TENNISBALL_BOUNCE_EVENT = 2808149963U;
         static const AkUniqueID TENNISBALL_SHOOT_EVENT = 3581374598U;
+        static const AkUniqueID UI_CLICK_EVENT = 2528159659U;
+        static const AkUniqueID UI_HOVER_EVENT = 3667070125U;
+        static const AkUniqueID VS_ANIM_EVENT = 3574916797U;
         static const AkUniqueID WIN_EVENT = 4187076448U;
     } // namespace EVENTS
 

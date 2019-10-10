@@ -1,15 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1699343283	Play_Music_Menu			\Default Work Unit\All\Play_Music_Menu	
+	2528159659	UI_Click_Event			\Default Work Unit\All\UI_Click_Event	
 	2808149963	TennisBall_Bounce_Event			\Default Work Unit\All\TennisBall_Bounce_Event	
 	2932040671	Play_Music			\Default Work Unit\All\Play_Music	
+	3574916797	VS_Anim_Event			\Default Work Unit\All\VS_Anim_Event	
 	3581374598	TennisBall_Shoot_Event			\Default Work Unit\All\TennisBall_Shoot_Event	
+	3667070125	UI_Hover_Event			\Default Work Unit\All\UI_Hover_Event	
 	4187076448	Win_Event			\Default Work Unit\All\Win_Event	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	26845653	Choose_UI	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\Choose_UI_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Choose_UI		445708
 	64355678	tennisballshoot-002	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\tennisballshoot-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Shoot\tennisballshoot-002		152424
 	70086444	tennisballshoot-005	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\tennisballshoot-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Shoot\tennisballshoot-005		160900
 	108321990	TennisVoice_BO_v1	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\TennisVoice_BO_v1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisVoice_BO_v1		21390888
 	265062356	tennisballbounce-001	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\tennisballbounce-001_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Bounce\tennisballbounce-001		165112
 	381420399	houra2	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\houra2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Win\Win_Houra\houra2		793864
+	512665687	VS_Drop	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\VS_Drop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VS_Drop		390004
 	520749101	tennisballbounce-002	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\tennisballbounce-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Bounce\tennisballbounce-002		97492
 	607803259	tennisballshoot-003	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\tennisballshoot-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Shoot\tennisballshoot-003		95316
 	662428696	tennisballbounce-003	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\tennisballbounce-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Bounce\tennisballbounce-003		104852
@@ -19,4 +25,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	868161165	houra	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\houra_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Win\Win_Houra\houra		793864
 	893195315	Win_UI	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\Win_UI_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Win\Win_UI		445708
 	997599152	houra3	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\houra3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Win\Win_Houra\houra3		793864
+	1062229721	TennisVoice_Menu_v3	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\TennisVoice_Menu_v3_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisVoice_Menu_v3		3565204
 
