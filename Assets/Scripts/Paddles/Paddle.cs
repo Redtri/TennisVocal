@@ -26,7 +26,7 @@ public class Paddle : MonoBehaviour
 		inputs = GetComponent<IInput>();
 		terrain = FindObjectOfType<Terrain>();
 		_currentCase = startCase;
-		_startPos = transform.position;
+		_startPos = transform.position - Vector3.forward* terrain.size.x;
 	}
 
 	public void Move(int direction)
@@ -38,7 +38,7 @@ public class Paddle : MonoBehaviour
 		}
 		_IsMoving = true;
 		currentPos += direction * Time.deltaTime * speed;
-
+		currentPos = Mathf.Clamp01(currentPos);
 
 		//_currentCase += direction;
 		//_currentCase = Mathf.Clamp(_currentCase, 0, caseNumber);

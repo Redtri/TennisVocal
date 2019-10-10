@@ -9,9 +9,12 @@ public class Bounce : MonoBehaviour
     [SerializeField] private Transform reference;
     public AK.Wwise.Event wwHitEvent;
 
+	private BoxCollider col;
+
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
+		col = GetComponent<BoxCollider>();
     }
 
     // Update is called once per frame
@@ -19,6 +22,11 @@ public class Bounce : MonoBehaviour
     {
         
     }
+
+	public void SetActive(bool b)
+	{
+		col.enabled = b;
+	}
 
     void OnCollisionEnter(Collision collision)
     {
@@ -28,12 +36,13 @@ public class Bounce : MonoBehaviour
         {
             //this.GetComponent<Rigidbody>().AddForce(collision.relativeVelocity.magnitude * other.transform.up * bouncyness);
             this.rebound(collision);
+			SetActive(false);
         }
     }
 
     
     void rebound(Collision collision) {
-
+		
         wwHitEvent.Post(gameObject);
         Collider ball = collision.collider;
         List<ContactPoint> contactPoints = new List<ContactPoint>();

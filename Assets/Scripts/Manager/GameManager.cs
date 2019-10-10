@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable() {
         SceneManager.sceneLoaded += OnSceneLoaded;
+		
     }
 
     private void OnDisable() {
@@ -46,7 +47,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void Update() {
+	private void Start()
+	{
+		StartService(0);
+	}
+
+	void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             PauseResume();
         }
@@ -78,7 +84,7 @@ public class GameManager : MonoBehaviour
     }
 
     private void StartService(int playerIndex) {
-        onService?.Invoke(playerIndex);
+		onService?.Invoke(playerIndex);
     }
 
     //LOADING
@@ -95,6 +101,7 @@ public class GameManager : MonoBehaviour
     }
     
     public void AddScore(int playerIndex) {
+		Debug.Log("add score");
         scores[playerIndex] += 1;
         lastPlayerGoal = playerIndex;
         if (scores[playerIndex] == maxPoints) {
