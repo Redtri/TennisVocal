@@ -5,7 +5,18 @@ public class UI_MainMenu : MonoBehaviour
     public GameObject mainMenu;
     public GameObject credits;
 
-    public void Menu() {
+
+	private void OnEnable()
+	{
+		GameManager.instance.onPlay += StopSound;
+	}
+
+	private void OnDisable()
+	{
+		GameManager.instance.onPlay -= StopSound;
+	}
+
+	public void Menu() {
         mainMenu.SetActive(true);
         credits.SetActive(false);
     }
@@ -14,4 +25,10 @@ public class UI_MainMenu : MonoBehaviour
         mainMenu.SetActive(false);
         credits.SetActive(true);
     }
+
+	private void StopSound()
+	{
+		print("STOP");
+		GetComponent<AkAmbient>().Stop(0);
+	}
 }

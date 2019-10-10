@@ -31,7 +31,7 @@ public class Bounce : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         Collider other = collision.collider;
-        
+		//Debug.Log("collision" + collision.gameObject);
         if (other.gameObject.name == "Ball")
         {
             //this.GetComponent<Rigidbody>().AddForce(collision.relativeVelocity.magnitude * other.transform.up * bouncyness);
@@ -42,7 +42,7 @@ public class Bounce : MonoBehaviour
 
     
     void rebound(Collision collision) {
-		
+		//Debug.Log("rebound");
         wwHitEvent.Post(gameObject);
         Collider ball = collision.collider;
         List<ContactPoint> contactPoints = new List<ContactPoint>();

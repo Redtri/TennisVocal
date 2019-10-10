@@ -8,7 +8,7 @@ public enum eGAME_STATE { RUN, LOAD, PAUSE};
 [DefaultExecutionOrder(-1000)]
 public class GameManager : MonoBehaviour
 {
-    public const int maxPoints = 10;
+    public const int maxPoints = 1;
     private bool isPaused;
     public static GameManager instance { get; private set; }
     public eGAME_PHASE gamePhase { get; private set; }
@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
 
     public delegate void End();
     public event End onEnd;
+
+	public delegate void Play();
+	public event Play onPlay;
 
 	public delegate void Pause(bool isPause);
 	public event Pause onPause;
@@ -73,7 +76,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator StartVersus() {
         Time.timeScale = 0f;
-        yield return new WaitForSecondsRealtime(3.3f);
+        yield return new WaitForSecondsRealtime(3f);
         Time.timeScale = 1f;
         StartService(lastPlayerGoal);
     }
@@ -91,12 +94,13 @@ public class GameManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
         Invoke("LoadCanvas", 0.01f);
-        if(scene.name == "GameScene") {
+        if(scene.buildIndex == 1) {
             StartCoroutine(StartVersus());
         }
     }
 
     public void LoadScene(int index) {
+		onPlay?.Invoke();
         SceneManager.LoadScene(index);
     }
     
@@ -105,7 +109,7 @@ public class GameManager : MonoBehaviour
         scores[playerIndex] += 1;
         lastPlayerGoal = playerIndex;
         if (scores[playerIndex] == maxPoints) {
-            onEnd.Invoke();
+            onEnd?.Invoke();
         } else {
             StartCoroutine(CoService(playerIndex));
         }
