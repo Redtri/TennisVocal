@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public enum eGAME_PHASE { MENU, VERSUS, SERVE, PLAY, END };
 public enum eGAME_STATE { RUN, LOAD, PAUSE};
-
+[DefaultExecutionOrder(-1000)]
 public class GameManager : MonoBehaviour
 {
     public const int maxPoints = 10;
