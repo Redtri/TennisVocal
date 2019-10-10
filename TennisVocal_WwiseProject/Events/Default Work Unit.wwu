@@ -56,6 +56,50 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Music_Menu" ID="{9F056F50-74FE-4DDC-81E7-86C8A46267E7}">
+							<ChildrenList>
+								<Action Name="" ID="{EB0E39FB-460D-40C1-8897-776890246CCF}" ShortID="332600041">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TennisVoice_Menu_v3" ID="{8BCAFB89-077A-4122-9786-CCCE299639AA}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Hover_Event" ID="{B9A2690A-FE6F-42BE-8B24-7B2F08F3BAF4}">
+							<ChildrenList>
+								<Action Name="" ID="{30DD6722-E79F-41EC-A8F5-0E801814CA09}" ShortID="618803194">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="UI_Hover" ID="{28B1E4FA-1352-45EF-BCD4-6E85CCAB1AAF}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UI_Click_Event" ID="{BD88F992-1B9B-4CC4-8E1B-C2EF6A6CEA63}">
+							<ChildrenList>
+								<Action Name="" ID="{F49F2D45-9435-4589-804C-1ACBF18180EE}" ShortID="682233119">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Choose_UI" ID="{1D7CE98C-F36A-4AA2-A2FF-86E9F1E7ADBF}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VS_Anim_Event" ID="{E20C3DF5-3F13-417A-823E-D6BBCC653A44}">
+							<ChildrenList>
+								<Action Name="" ID="{117BD7E8-811C-4C64-B995-01849AB9015E}" ShortID="42253491">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VS_Drop" ID="{E9F6F20F-D3AD-4B11-97D3-46D8E62B218F}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
