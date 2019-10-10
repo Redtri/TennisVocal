@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1210062646	VS_Anim_2_Event			\Default Work Unit\All\VS_Anim_2_Event	
 	1699343283	Play_Music_Menu			\Default Work Unit\All\Play_Music_Menu	
 	2528159659	UI_Click_Event			\Default Work Unit\All\UI_Click_Event	
 	2808149963	TennisBall_Bounce_Event			\Default Work Unit\All\TennisBall_Bounce_Event	
@@ -24,6 +25,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	662428696	tennisballbounce-003	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\tennisballbounce-003_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Bounce\tennisballbounce-003		104852
 	735510391	tennisballshoot-007	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\tennisballshoot-007_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Shoot\tennisballshoot-007		115336
 	762528213	tennisballshoot-006	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\tennisballshoot-006_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Shoot\tennisballshoot-006		36048
+	827045776	VS_Schling	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\VS_Schling_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VS_Schling		396964
 	856329045	tennisballshoot-004	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\tennisballshoot-004_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Shoot\tennisballshoot-004		167504
 	868161165	houra	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\houra_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Win\Win_Houra\houra		793864
 	893195315	Win_UI	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Mac\SFX\Win_UI_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Win\Win_UI		445708

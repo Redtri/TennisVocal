@@ -3,8 +3,9 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{97333179-F462-4D84-85FB-9A08AE206D39}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="Z:\Volumes\GUERRIC SSD\ENJMIN\TennisVocal\Hover_Scream\Cri_Tennis"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\Cours ENJMIN\TennisVoice\SB\Edited"/>
 				<Property Name="Event Action List\{2C7FBFD4-EFB1-4810-A619-7C491F814256}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3032E9BA-4685-4F3F-BDD0-9FFCF0D92D1E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{533A262B-CC39-4333-8E6A-3BD3818774C1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6625EDD0-09EE-47A9-AA54-C875F658E13F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{6D54637F-14DB-4817-8307-80F4B8B6A48D}\x64_Expand States" Type="string" Value=""/>
