@@ -7,6 +7,9 @@ public class PlayerBands : ScriptableObject
 	public Band high;
 	public Band strikeBand;
 
+	public float tolerance = 0.5f;
+	public float strikeTolerance = 0.7f;
+
 	public KeyCode lowKey = KeyCode.W;
 	public KeyCode highKey = KeyCode.X;
 
