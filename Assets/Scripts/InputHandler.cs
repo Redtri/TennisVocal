@@ -84,9 +84,13 @@ public class InputHandler : MonoBehaviour, IInput {
 	{
 		_axis = 0;
 
-		lowNormalized = scale(0, playerBands.tolerance+0.1f, 0, 1, playerBands.low.maxPeak);
-		highNormalized = scale(0, playerBands.tolerance + 0.1f, 0, 1, playerBands.high.maxPeak);
-		strikeNormalized = scale(0, playerBands.strikeTolerance + 0.1f, 0, 1, playerBands.strikeBand.maxPeak);
+		lowNormalized = scale(0, playerBands.tolerance, 0, 1, playerBands.low.maxPeak);
+		highNormalized = scale(0, playerBands.tolerance, 0, 1, playerBands.high.maxPeak);
+		strikeNormalized = scale(0, playerBands.strikeTolerance, 0, 1, playerBands.strikeBand.maxPeak);
+
+		lowNormalized *= lowNormalized;
+		highNormalized *= highNormalized;
+		strikeNormalized *= strikeNormalized;
 
 		if (playerBands.strikeBand.maxPeak > playerBands.strikeTolerance)
 		{
@@ -108,14 +112,24 @@ public class InputHandler : MonoBehaviour, IInput {
 			_power = 0;
 		}
 
-		if (playerBands.low.maxPeak > playerBands.tolerance && playerBands.low.maxPeak > playerBands.high.maxPeak)
+		float delta = lowNormalized - highNormalized;
+		if(delta > 0.1f)
+		{
+			_axis = 1;
+		}
+		if(delta < -0.1f)
+		{
+			_axis = -1;
+		}
+
+		/*if (playerBands.low.maxPeak > playerBands.tolerance && playerBands.low.maxPeak > playerBands.high.maxPeak)
 		{
 			_axis = 1;
 		}
 		if(playerBands.high.maxPeak > playerBands.tolerance && playerBands.high.maxPeak > playerBands.low.maxPeak)
 		{
 			_axis = -1;
-		}
+		}*/
 	}
 
 	public float scale(float OldMin, float OldMax, float NewMin, float NewMax, float OldValue)

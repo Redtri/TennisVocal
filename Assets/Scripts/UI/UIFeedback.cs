@@ -11,9 +11,9 @@ public class UIFeedback : MonoBehaviour
 
 	private void Update()
 	{
-		low.value = input.lowNormalized* input.lowNormalized;
-		high.value = input.highNormalized* input.highNormalized;
-		strike.value = input.strikeNormalized* input.strikeNormalized;
+		low.value = input.lowNormalized;
+		high.value = input.highNormalized;
+		strike.value = input.strikeNormalized;
 	}
 
 }
