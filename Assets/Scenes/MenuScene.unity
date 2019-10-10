@@ -204,6 +204,60 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!1 &181292798 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2444719360708766429, guid: f14faed7353311b46864f869e700d84d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1816993641484963583}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &181292799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181292798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4b92f2108c69964a8d6a67599bedd19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wwSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+--- !u!114 &181292800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181292798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd2f6e35c1a73c428531d1fdecfb4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wwSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+--- !u!114 &181292801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181292798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4649f3be0ef439d40ae24d94aaa89ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wwSound:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1001 &625393816
 PrefabInstance:
   m_ObjectHideFlags: 0
