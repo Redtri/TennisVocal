@@ -359,6 +359,9 @@
 					</ChildrenList>
 				</Folder>
 				<RandomSequenceContainer Name="UI_Hover" ID="{28B1E4FA-1352-45EF-BCD4-6E85CCAB1AAF}" ShortID="543296613">
+					<PropertyList>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
@@ -368,7 +371,14 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="tennisballbounce-001" ID="{5D5CAC45-9036-4717-825C-96BC7FC7FFC7}" ShortID="1009281197">
+						<Sound Name="REC_cm_01" ID="{5BED8BB1-CF48-4FC7-8DFC-151EECE535AF}" ShortID="629925032">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
@@ -378,19 +388,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="tennisballbounce-001" ID="{33D21234-A775-4D90-B7BA-59F858326615}" ShortID="902503147">
+								<AudioFileSource Name="REC_cm_01" ID="{4B2F1E0A-E6B4-4716-88ED-1E91E222EF1C}" ShortID="479200981">
 									<Language>SFX</Language>
-									<AudioFile>tennisballbounce-001.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="265062356"/>
-									</ConvertedFileIDList>
+									<AudioFile>REC.cm_01.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="tennisballbounce-001" ID="{33D21234-A775-4D90-B7BA-59F858326615}" Platform="Linked"/>
+								<ActiveSource Name="REC_cm_01" ID="{4B2F1E0A-E6B4-4716-88ED-1E91E222EF1C}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="tennisballbounce-002" ID="{AF3F375F-5EAE-4424-B6A3-053703EB2826}" ShortID="683838881">
+						<Sound Name="REC_cm_02" ID="{9E824A4F-8552-413C-9DB8-22487A399225}" ShortID="368137042">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
@@ -400,19 +407,16 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="tennisballbounce-002" ID="{16CD4744-528E-4C8C-8C9E-2D5C0793E55A}" ShortID="797052166">
+								<AudioFileSource Name="REC_cm_02" ID="{D35F6E16-B586-422F-8841-50A1BDDFB2F5}" ShortID="630538930">
 									<Language>SFX</Language>
-									<AudioFile>tennisballbounce-002.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="520749101"/>
-									</ConvertedFileIDList>
+									<AudioFile>REC.cm_02.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="tennisballbounce-002" ID="{16CD4744-528E-4C8C-8C9E-2D5C0793E55A}" Platform="Linked"/>
+								<ActiveSource Name="REC_cm_02" ID="{D35F6E16-B586-422F-8841-50A1BDDFB2F5}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="tennisballbounce-003" ID="{D90F14DB-A49C-47A0-BDF2-001EEF506AB7}" ShortID="700670746">
+						<Sound Name="REC_cm_04" ID="{8C5FA55D-3D8A-4FC7-8371-B56C367BFECD}" ShortID="669955938">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
@@ -422,16 +426,58 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="tennisballbounce-003" ID="{1EF27F13-5043-46BB-9A10-0F51C503C64D}" ShortID="236856157">
+								<AudioFileSource Name="REC_cm_04" ID="{5CF950F7-6C36-47E5-A771-ABE10E0AEE09}" ShortID="929459527">
 									<Language>SFX</Language>
-									<AudioFile>tennisballbounce-003.wav</AudioFile>
-									<ConvertedFileIDList>
-										<File ID="662428696"/>
-									</ConvertedFileIDList>
+									<AudioFile>REC.cm_04.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
-								<ActiveSource Name="tennisballbounce-003" ID="{1EF27F13-5043-46BB-9A10-0F51C503C64D}" Platform="Linked"/>
+								<ActiveSource Name="REC_cm_04" ID="{5CF950F7-6C36-47E5-A771-ABE10E0AEE09}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="REC_cm_05" ID="{0076A51E-AF89-4CA8-B291-A40B858686A1}" ShortID="55664714">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="REC_cm_05" ID="{50CFD5E8-4CD7-4C5F-AC08-3CE680DD860C}" ShortID="917030369">
+									<Language>SFX</Language>
+									<AudioFile>REC.cm_05.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="REC_cm_05" ID="{50CFD5E8-4CD7-4C5F-AC08-3CE680DD860C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="REC_cm_07" ID="{E9076039-D384-4493-A5B3-D8597135A02D}" ShortID="452904187">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="REC_cm_07" ID="{09764C21-881F-408C-AA2E-F8D7741337D3}" ShortID="370582841">
+									<Language>SFX</Language>
+									<AudioFile>REC.cm_07.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="REC_cm_07" ID="{09764C21-881F-408C-AA2E-F8D7741337D3}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
@@ -516,6 +562,25 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="VS_Drop" ID="{31FD3796-1451-4B13-89A1-52B0F0DA16D8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="VS_Schling" ID="{9828CCC2-8D60-4E63-A4A1-0BBB017C9096}" ShortID="512703622">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="VS_Schling" ID="{89F9B446-CB57-4FD1-AFCC-039E6A29BCBD}" ShortID="827045776">
+							<Language>SFX</Language>
+							<AudioFile>VS_Schling.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="VS_Schling" ID="{89F9B446-CB57-4FD1-AFCC-039E6A29BCBD}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

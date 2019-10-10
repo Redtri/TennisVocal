@@ -7,6 +7,8 @@ public class UI_GameMenu : MonoBehaviour
 	public GameObject menu;
 	public GameObject versus;
 	public GameObject end;
+    public GameObject score;
+    public Text[] scores;
 	public Button resumButton;
 
 
@@ -26,8 +28,15 @@ public class UI_GameMenu : MonoBehaviour
 		resumButton.onClick.RemoveListener(Resume);
 	}
 
-	private void OnService(int playerIndex)
+    private void Update() {
+        for (int i = 0; i < scores.Length; i++) {
+            scores[i].text = GameManager.instance.scores[i].ToString();
+        }
+    }
+
+    private void OnService(int playerIndex)
 	{
+        score.SetActive(true);
 		SetVersus(false);
 	}
 
@@ -37,6 +46,7 @@ public class UI_GameMenu : MonoBehaviour
 	}
 
     private void OnEnd() {
+        score.SetActive(false);
         SetEnd(true);
     }
 

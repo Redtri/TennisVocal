@@ -26,7 +26,8 @@
 				<Event Id="2808149963" Name="TennisBall_Bounce_Event" ObjectPath="\Events\Default Work Unit\All\TennisBall_Bounce_Event" DurationType="OneShot" DurationMin="0.552313" DurationMax="1.050227"/>
 				<Event Id="3581374598" Name="TennisBall_Shoot_Event" ObjectPath="\Events\Default Work Unit\All\TennisBall_Shoot_Event" DurationType="OneShot" DurationMin="0.198184" DurationMax="0.977020"/>
 				<Event Id="2528159659" Name="UI_Click_Event" ObjectPath="\Events\Default Work Unit\All\UI_Click_Event" DurationType="OneShot" DurationMin="2.526326" DurationMax="2.526326"/>
-				<Event Id="3667070125" Name="UI_Hover_Event" ObjectPath="\Events\Default Work Unit\All\UI_Hover_Event" DurationType="OneShot" DurationMin="0.552313" DurationMax="0.935646"/>
+				<Event Id="3667070125" Name="UI_Hover_Event" ObjectPath="\Events\Default Work Unit\All\UI_Hover_Event" DurationType="OneShot" DurationMin="0.255669" DurationMax="0.453333"/>
+				<Event Id="1210062646" Name="VS_Anim_2_Event" ObjectPath="\Events\Default Work Unit\All\VS_Anim_2_Event" DurationType="OneShot" DurationMin="2.250000" DurationMax="2.250000"/>
 				<Event Id="3574916797" Name="VS_Anim_Event" ObjectPath="\Events\Default Work Unit\All\VS_Anim_Event" DurationType="OneShot" DurationMin="2.210544" DurationMax="2.210544"/>
 				<Event Id="4187076448" Name="Win_Event" ObjectPath="\Events\Default Work Unit\All\Win_Event" DurationType="OneShot" DurationMin="4.247434" DurationMax="4.767584"/>
 			</IncludedEvents>
@@ -51,9 +52,17 @@
 					<ShortName>tennisballbounce-001.wav</ShortName>
 					<Path>SFX/tennisballbounce-001_10C4C929.wem</Path>
 				</File>
+				<File Id="370582841" Language="SFX">
+					<ShortName>REC.cm_07.wav</ShortName>
+					<Path>SFX/REC.cm_07_10C4C929.wem</Path>
+				</File>
 				<File Id="381420399" Language="SFX">
 					<ShortName>houra2.wav</ShortName>
 					<Path>SFX/houra2_10C4C929.wem</Path>
+				</File>
+				<File Id="479200981" Language="SFX">
+					<ShortName>REC.cm_01.wav</ShortName>
+					<Path>SFX/REC.cm_01_10C4C929.wem</Path>
 				</File>
 				<File Id="512665687" Language="SFX">
 					<ShortName>VS_Drop.wav</ShortName>
@@ -67,6 +76,10 @@
 					<ShortName>tennisballshoot-003.wav</ShortName>
 					<Path>SFX/tennisballshoot-003_10C4C929.wem</Path>
 				</File>
+				<File Id="630538930" Language="SFX">
+					<ShortName>REC.cm_02.wav</ShortName>
+					<Path>SFX/REC.cm_02_10C4C929.wem</Path>
+				</File>
 				<File Id="662428696" Language="SFX">
 					<ShortName>tennisballbounce-003.wav</ShortName>
 					<Path>SFX/tennisballbounce-003_10C4C929.wem</Path>
@@ -79,6 +92,10 @@
 					<ShortName>tennisballshoot-006.wav</ShortName>
 					<Path>SFX/tennisballshoot-006_10C4C929.wem</Path>
 				</File>
+				<File Id="827045776" Language="SFX">
+					<ShortName>VS_Schling.wav</ShortName>
+					<Path>SFX/VS_Schling_10C4C929.wem</Path>
+				</File>
 				<File Id="856329045" Language="SFX">
 					<ShortName>tennisballshoot-004.wav</ShortName>
 					<Path>SFX/tennisballshoot-004_10C4C929.wem</Path>
@@ -90,6 +107,14 @@
 				<File Id="893195315" Language="SFX">
 					<ShortName>Win_UI.wav</ShortName>
 					<Path>SFX/Win_UI_10C4C929.wem</Path>
+				</File>
+				<File Id="917030369" Language="SFX">
+					<ShortName>REC.cm_05.wav</ShortName>
+					<Path>SFX/REC.cm_05_10C4C929.wem</Path>
+				</File>
+				<File Id="929459527" Language="SFX">
+					<ShortName>REC.cm_04.wav</ShortName>
+					<Path>SFX/REC.cm_04_10C4C929.wem</Path>
 				</File>
 				<File Id="997599152" Language="SFX">
 					<ShortName>houra3.wav</ShortName>

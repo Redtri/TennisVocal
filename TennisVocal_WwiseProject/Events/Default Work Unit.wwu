@@ -100,6 +100,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="VS_Anim_2_Event" ID="{3032E9BA-4685-4F3F-BDD0-9FFCF0D92D1E}">
+							<ChildrenList>
+								<Action Name="" ID="{341AE5D0-8A68-4653-8E88-3CB3E27F3D73}" ShortID="676389723">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VS_Schling" ID="{9828CCC2-8D60-4E63-A4A1-0BBB017C9096}" WorkUnitID="{CE43EB54-4164-4423-B870-66BED914A838}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

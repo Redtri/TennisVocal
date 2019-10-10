@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848dfe32fd8936c4c985444bc836a947, type: 3}
+  m_Name: E20C3DF5-3F13-417A-823E-D6BBCC653A44
+  m_EditorClassIdentifier: 
+  objectName: VS_Anim_Event
+  id: 3574916797
+  guid: E20C3DF5-3F13-417A-823E-D6BBCC653A44
