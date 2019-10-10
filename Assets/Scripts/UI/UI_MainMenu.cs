@@ -1,20 +1,24 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class UI_MainMenu : MonoBehaviour
 {
     public GameObject mainMenu;
     public GameObject credits;
+    public Button playButton;
 
 
-	private void OnEnable()
+    private void OnEnable()
 	{
 		GameManager.instance.onPlay += StopSound;
+        playButton.onClick.AddListener(PlayEvent);
 	}
 
 	private void OnDisable()
 	{
 		GameManager.instance.onPlay -= StopSound;
-	}
+        playButton.onClick.RemoveListener(PlayEvent);
+    }
 
 	public void Menu() {
         mainMenu.SetActive(true);
@@ -24,6 +28,10 @@ public class UI_MainMenu : MonoBehaviour
     public void Credits() {
         mainMenu.SetActive(false);
         credits.SetActive(true);
+    }
+
+    private void PlayEvent() {
+        GameManager.instance.LoadScene(1);
     }
 
 	private void StopSound()

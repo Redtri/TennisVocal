@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
         if (!instance) {
             instance = this;
         } else {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
     }
 
@@ -96,6 +96,11 @@ public class GameManager : MonoBehaviour
         Invoke("LoadCanvas", 0.01f);
         if(scene.buildIndex == 1) {
             StartCoroutine(StartVersus());
+        } else {
+            for (int i = 0; i < scores.Length; i ++) {
+                scores[i] = 0;
+            }
+            Time.timeScale = 1f;
         }
     }
 
@@ -110,6 +115,7 @@ public class GameManager : MonoBehaviour
         lastPlayerGoal = playerIndex;
         if (scores[playerIndex] == maxPoints) {
             onEnd?.Invoke();
+            Time.timeScale = 0f;
         } else {
             StartCoroutine(CoService(playerIndex));
         }
