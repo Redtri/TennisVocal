@@ -1,19 +1,26 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class UI_MainMenu : MonoBehaviour
 {
     public GameObject mainMenu;
     public GameObject credits;
+    public Button playButton;
+	public Button quitButton;
 
 
-	private void OnEnable()
+    private void OnEnable()
 	{
 		GameManager.instance.onPlay += StopSound;
+        playButton.onClick.AddListener(PlayEvent);
+		quitButton.onClick.AddListener(Quit);
 	}
 
 	private void OnDisable()
 	{
 		GameManager.instance.onPlay -= StopSound;
+        playButton.onClick.RemoveListener(PlayEvent);
+		quitButton.onClick.RemoveListener(Quit);
 	}
 
 	public void Menu() {
@@ -25,6 +32,15 @@ public class UI_MainMenu : MonoBehaviour
         mainMenu.SetActive(false);
         credits.SetActive(true);
     }
+
+    private void PlayEvent() {
+        GameManager.instance.LoadScene(1);
+    }
+
+	private void Quit()
+	{
+		GameManager.instance.QuitGame();
+	}
 
 	private void StopSound()
 	{

@@ -25,17 +25,13 @@
 				<Event Id="1699343283" Name="Play_Music_Menu" ObjectPath="\Events\Default Work Unit\All\Play_Music_Menu" DurationType="Infinite"/>
 				<Event Id="2808149963" Name="TennisBall_Bounce_Event" ObjectPath="\Events\Default Work Unit\All\TennisBall_Bounce_Event" DurationType="OneShot" DurationMin="0.552313" DurationMax="1.050227"/>
 				<Event Id="3581374598" Name="TennisBall_Shoot_Event" ObjectPath="\Events\Default Work Unit\All\TennisBall_Shoot_Event" DurationType="OneShot" DurationMin="0.198184" DurationMax="0.977020"/>
-				<Event Id="2528159659" Name="UI_Click_Event" ObjectPath="\Events\Default Work Unit\All\UI_Click_Event" DurationType="OneShot" DurationMin="2.526326" DurationMax="2.526326"/>
+				<Event Id="2528159659" Name="UI_Click_Event" ObjectPath="\Events\Default Work Unit\All\UI_Click_Event" DurationType="OneShot" DurationMin="1.263175" DurationMax="1.263175"/>
 				<Event Id="3667070125" Name="UI_Hover_Event" ObjectPath="\Events\Default Work Unit\All\UI_Hover_Event" DurationType="OneShot" DurationMin="0.255669" DurationMax="0.453333"/>
 				<Event Id="1210062646" Name="VS_Anim_2_Event" ObjectPath="\Events\Default Work Unit\All\VS_Anim_2_Event" DurationType="OneShot" DurationMin="2.250000" DurationMax="2.250000"/>
 				<Event Id="3574916797" Name="VS_Anim_Event" ObjectPath="\Events\Default Work Unit\All\VS_Anim_Event" DurationType="OneShot" DurationMin="2.210544" DurationMax="2.210544"/>
 				<Event Id="4187076448" Name="Win_Event" ObjectPath="\Events\Default Work Unit\All\Win_Event" DurationType="OneShot" DurationMin="4.247434" DurationMax="4.767584"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="26845653" Language="SFX">
-					<ShortName>Choose_UI.wav</ShortName>
-					<Path>SFX/Choose_UI_10C4C929.wem</Path>
-				</File>
 				<File Id="64355678" Language="SFX">
 					<ShortName>tennisballshoot-002.wav</ShortName>
 					<Path>SFX/tennisballshoot-002_10C4C929.wem</Path>
@@ -119,6 +115,10 @@
 				<File Id="997599152" Language="SFX">
 					<ShortName>houra3.wav</ShortName>
 					<Path>SFX/houra3_10C4C929.wem</Path>
+				</File>
+				<File Id="1035272604" Language="SFX">
+					<ShortName>Choose_UI_v2.wav</ShortName>
+					<Path>SFX/Choose_UI_v2_10C4C929.wem</Path>
 				</File>
 				<File Id="1062229721" Language="SFX">
 					<ShortName>TennisVoice_Menu_v3.wav</ShortName>

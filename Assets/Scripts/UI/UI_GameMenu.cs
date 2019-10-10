@@ -10,6 +10,7 @@ public class UI_GameMenu : MonoBehaviour
     public GameObject score;
     public Text[] scores;
 	public Button resumButton;
+    public Button quitButton;
 
 
 	private void OnEnable()
@@ -18,7 +19,9 @@ public class UI_GameMenu : MonoBehaviour
         GameManager.instance.onPause += OnPause;
         GameManager.instance.onEnd += OnEnd;
         resumButton.onClick.AddListener(Resume);
-	}
+        quitButton.onClick.AddListener(Quit);
+        GameManager.instance.onPlay += StopSound;
+    }
 
 
 	private void OnDisable()
@@ -26,7 +29,9 @@ public class UI_GameMenu : MonoBehaviour
 		GameManager.instance.onService -= OnService;
 		GameManager.instance.onPause -= OnPause;
 		resumButton.onClick.RemoveListener(Resume);
-	}
+        quitButton.onClick.RemoveListener(Quit);
+        GameManager.instance.onPlay -= StopSound;
+    }
 
     private void Update() {
         for (int i = 0; i < scores.Length; i++) {
@@ -36,7 +41,7 @@ public class UI_GameMenu : MonoBehaviour
 
     private void OnService(int playerIndex)
 	{
-        score.SetActive(true);
+        score?.SetActive(true);
 		SetVersus(false);
 	}
 
@@ -46,7 +51,7 @@ public class UI_GameMenu : MonoBehaviour
 	}
 
     private void OnEnd() {
-        score.SetActive(false);
+        score?.SetActive(false);
         SetEnd(true);
     }
 
@@ -66,6 +71,16 @@ public class UI_GameMenu : MonoBehaviour
 
 	private void Resume()
 	{
+        GameManager.instance.PauseResume();
 		SetMenu(false);
 	}
+
+    private void Quit() {
+        GameManager.instance.LoadScene(0);
+    }
+
+    private void StopSound() {
+        print("STOP");
+        GetComponent<AkAmbient>().Stop(0);
+    }
 }

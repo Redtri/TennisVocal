@@ -10,7 +10,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	4187076448	Win_Event			\Default Work Unit\All\Win_Event	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	26845653	Choose_UI	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\Choose_UI_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Choose_UI		445708
 	64355678	tennisballshoot-002	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\tennisballshoot-002_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Shoot\tennisballshoot-002		152424
 	70086444	tennisballshoot-005	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\tennisballshoot-005_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisBall_Shoot\tennisballshoot-005		160900
 	108321990	TennisVoice_BO_v1	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\TennisVoice_BO_v1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisVoice_BO_v1		21390888
@@ -32,5 +31,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	917030369	REC_cm_05	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\REC.cm_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Hover\REC_cm_05		33228
 	929459527	REC_cm_04	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\REC.cm_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI_Hover\REC_cm_04		30640
 	997599152	houra3	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\houra3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Win\Win_Houra\houra3		793864
+	1035272604	Choose_UI_v2	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\Choose_UI_v2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Choose_UI_v2		222888
 	1062229721	TennisVoice_Menu_v3	Y:\Desktop\Cours ENJMIN\TennisVoice\Git_Tennis\TennisVocal\TennisVocal_WwiseProject\.cache\Windows\SFX\TennisVoice_Menu_v3_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\TennisVoice_Menu_v3		3565204
 
