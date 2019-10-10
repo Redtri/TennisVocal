@@ -13,25 +13,25 @@ MonoBehaviour:
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
   AcousticTextureWwu:
-  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 865b2198565ea149bc2a1d9ee16b3026
     GuidInternal: 
-    m_lastTime: -8586310357074775808
+    m_lastTime: -8586310402636340243
     List: []
   AuxBusWwu:
-  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 28d18246fdac034a8aca4cf5ce308b43
     GuidInternal: 
-    m_lastTime: -8586310357074775808
+    m_lastTime: -8586310402639051154
     List: []
   BankWwu:
-  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 4a42d7e7169bfa48809e83069a2da0dc
     GuidInternal: 
-    m_lastTime: -8586309940904775808
+    m_lastTime: -8586309873705629924
     List:
     - name: Main
       guid: da191a942e3f6e4b8c8c497fe9cf60a6
@@ -43,28 +43,14 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Main
         ObjectType: 7
-      Path: Default Work Unit/All/Main
+      Path: Default Work Unit\All\Main
   EventWwu:
-  - PhysicalPath: Events/Default Work Unit.wwu
+  - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 44f6c70a107ea040aa81e243a0c40723
     GuidInternal: 
-    m_lastTime: -8586309940904775808
+    m_lastTime: -8586309107771033466
     List:
-    - name: Loose_Event
-      guid: 7ba73aa1bccccc4a9d71b0128679f0bb
-      id: 694907692
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: All
-        ObjectType: 4
-      - ElementName: Loose_Event
-        ObjectType: 3
-      Path: Default Work Unit/All/Loose_Event
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_Music
       guid: 2b263a5339cc33438e6a3bd3818774c1
       id: 2932040671
@@ -75,7 +61,21 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Play_Music
         ObjectType: 3
-      Path: Default Work Unit/All/Play_Music
+      Path: Default Work Unit\All\Play_Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music_Menu
+      guid: 506f059ffe74dc4d81e786c8a46267e7
+      id: 1699343283
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: All
+        ObjectType: 4
+      - ElementName: Play_Music_Menu
+        ObjectType: 3
+      Path: Default Work Unit\All\Play_Music_Menu
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -89,7 +89,7 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: TennisBall_Bounce_Event
         ObjectType: 3
-      Path: Default Work Unit/All/TennisBall_Bounce_Event
+      Path: Default Work Unit\All\TennisBall_Bounce_Event
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -103,7 +103,49 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: TennisBall_Shoot_Event
         ObjectType: 3
-      Path: Default Work Unit/All/TennisBall_Shoot_Event
+      Path: Default Work Unit\All\TennisBall_Shoot_Event
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Click_Event
+      guid: 92f988bd9b1bc44c8e1bc2ef6a6cea63
+      id: 2528159659
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: All
+        ObjectType: 4
+      - ElementName: UI_Click_Event
+        ObjectType: 3
+      Path: Default Work Unit\All\UI_Click_Event
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: UI_Hover_Event
+      guid: 0a69a2b96ffebe428b247b2f08f3baf4
+      id: 3667070125
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: All
+        ObjectType: 4
+      - ElementName: UI_Hover_Event
+        ObjectType: 3
+      Path: Default Work Unit\All\UI_Hover_Event
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: VS_Anim_Event
+      guid: f53d0ce2133f7a41823ed6bbcc653a44
+      id: 3574916797
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: All
+        ObjectType: 4
+      - ElementName: VS_Anim_Event
+        ObjectType: 3
+      Path: Default Work Unit\All\VS_Anim_Event
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -117,45 +159,42 @@ MonoBehaviour:
         ObjectType: 4
       - ElementName: Win_Event
         ObjectType: 3
-      Path: Default Work Unit/All/Win_Event
+      Path: Default Work Unit\All\Win_Event
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
   RtpcWwu:
-  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 4fc0b25d54e87042847b44e363cd18a7
     GuidInternal: 
-    m_lastTime: -8586310357074775808
+    m_lastTime: -8586310402639101019
     List: []
   StateWwu:
-  - PhysicalPath: States/Default Work Unit.wwu
+  - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 594958ac0a665844bec2a7e8f3cb42bd
     GuidInternal: 
-    m_lastTime: -8586310357074775808
+    m_lastTime: -8586310402637960110
     List: []
   SwitchWwu:
-  - PhysicalPath: Switches/Default Work Unit.wwu
+  - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 9dd7d7e732ed9e429ed936d7a4204f55
     GuidInternal: 
-    m_lastTime: -8586310357074775808
+    m_lastTime: -8586310402637900271
     List: []
   TriggerWwu:
-  - PhysicalPath: Triggers/Default Work Unit.wwu
+  - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: f4a2353e3701ca428fe2ddda88b806ef
     GuidInternal: 
-    m_lastTime: -8586310357074775808
+    m_lastTime: -8586310402637850409
     List: []
   ExpandedItems:
   - /TennisVocal_WwiseProject
   - /TennisVocal_WwiseProject/Events
   - /TennisVocal_WwiseProject/Events/Default Work Unit
   - /TennisVocal_WwiseProject/Events/Default Work Unit/All
-  - /TennisVocal_WwiseProject/SoundBanks
-  - /TennisVocal_WwiseProject/SoundBanks/Default Work Unit
-  - /TennisVocal_WwiseProject/SoundBanks/Default Work Unit/All
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
