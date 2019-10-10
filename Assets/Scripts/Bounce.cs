@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bounce : MonoBehaviour
 {
 
-    [SerializeField] private float bounciness;
+    [SerializeField] public float bounciness;
     [SerializeField] private Transform reference;
     public AK.Wwise.Event wwHitEvent;
 
