@@ -342,6 +342,7 @@ MonoBehaviour:
   credits: {fileID: 1816993642393187718}
   splash: {fileID: 5660944062700556704}
   playButton: {fileID: 5395866584224075130}
+  quitButton: {fileID: 5395866582901852497}
 --- !u!114 &1816993643001642860
 MonoBehaviour:
   m_ObjectHideFlags: 0

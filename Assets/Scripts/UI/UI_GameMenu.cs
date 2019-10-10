@@ -41,7 +41,7 @@ public class UI_GameMenu : MonoBehaviour
 
     private void OnService(int playerIndex)
 	{
-        score.SetActive(true);
+        score?.SetActive(true);
 		SetVersus(false);
 	}
 
@@ -51,7 +51,7 @@ public class UI_GameMenu : MonoBehaviour
 	}
 
     private void OnEnd() {
-        score.SetActive(false);
+        score?.SetActive(false);
         SetEnd(true);
     }
 

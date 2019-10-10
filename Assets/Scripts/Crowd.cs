@@ -12,7 +12,8 @@ public class Crowd : MonoBehaviour
 	public float waveHeight = 5;
 	public float speed = 10;
 	public float waveLength = 0.2f;
-
+	public float size = 1;
+	public Color col;
 	private SpriteRenderer[] rends;
 	private float angle = 0;
 
@@ -24,6 +25,7 @@ public class Crowd : MonoBehaviour
 		for(int  i =0; i< rends.Length; i++)
 		{
 			rends[i] = CreateSprite(sprite[(int)Random.Range(0, sprite.Length)]);
+			
 		}
 		cam = FindObjectOfType<Camera>();
 	}
@@ -38,6 +40,8 @@ public class Crowd : MonoBehaviour
 			{
 				rends[i].transform.localPosition = new Vector3(x*scale.x, Mathf.Abs(Mathf.Sin(x * Mathf.PI * waveLength + y *Mathf.PI/12 + angle)*waveHeight), y*scale.y);
 				rends[i].transform.LookAt(cam.transform);
+				rends[i].transform.localScale = Vector3.one * size;
+				
 				i++;
 			}
 		}
@@ -50,6 +54,7 @@ public class Crowd : MonoBehaviour
 		SpriteRenderer rend = g.AddComponent<SpriteRenderer>();
 		rend.sprite = sprite;
 		rend.sortingOrder = 10;
+		rend.color = col;
 		return rend;
 	}
 

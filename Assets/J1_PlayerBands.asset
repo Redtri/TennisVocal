@@ -13,19 +13,21 @@ MonoBehaviour:
   m_Name: J1_PlayerBands
   m_EditorClassIdentifier: 
   low:
-    min: 120
-    max: 160
-    sum: 0.13464612
-    maxPeak: 0.20980135
-  high:
-    min: 80
-    max: 120
-    sum: 0.15242945
-    maxPeak: 0.35742316
-  strikeBand:
-    min: 120
-    max: 120
+    min: 240
+    max: 280
     sum: 0
     maxPeak: 0
+  high:
+    min: 160
+    max: 200
+    sum: 0
+    maxPeak: 0
+  strikeBand:
+    min: 240
+    max: 200
+    sum: 0
+    maxPeak: 0
+  tolerance: 0.6
+  strikeTolerance: 0.7
   lowKey: 97
   highKey: 122

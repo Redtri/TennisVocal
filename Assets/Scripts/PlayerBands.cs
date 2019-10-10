@@ -47,7 +47,7 @@ public class PlayerBands : ScriptableObject
 			if (bs[i].maxPeak > 0.5f)
 			{
 				highest = i;
-				break;
+				//break;
 			}
 		}
 

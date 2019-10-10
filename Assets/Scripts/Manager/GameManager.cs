@@ -8,7 +8,7 @@ public enum eGAME_STATE { RUN, LOAD, PAUSE};
 [DefaultExecutionOrder(-1000)]
 public class GameManager : MonoBehaviour
 {
-    public const int maxPoints = 1;
+    public const int maxPoints = 5;
     private bool isPaused;
     public static GameManager instance { get; private set; }
     public eGAME_PHASE gamePhase { get; private set; }

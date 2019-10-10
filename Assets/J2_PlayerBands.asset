@@ -14,18 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   low:
     min: 0
-    max: 0
+    max: 40
     sum: 0
-    maxPeak: 0
+    maxPeak: 0.06628647
   high:
-    min: 0
-    max: 0
+    min: 320
+    max: 360
     sum: 0
     maxPeak: 0
   strikeBand:
     min: 0
-    max: 0
+    max: 360
     sum: 0
-    maxPeak: 0
+    maxPeak: 0.06628647
+  tolerance: 0.4
+  strikeTolerance: 0.7
   lowKey: 113
   highKey: 115

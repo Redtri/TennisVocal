@@ -9,20 +9,23 @@ public class UI_MainMenu : MonoBehaviour
     public GameObject credits;
     public GameObject splash;
     public Button playButton;
+	public Button quitButton;
 
 
     private void OnEnable()
 	{
 		GameManager.instance.onPlay += StopSound;
         playButton.onClick.AddListener(PlayEvent);
+		quitButton.onClick.AddListener(Quit);
         splash.SetActive(true);
         StartCoroutine(Splash());
-    }
+	}
 
     private void OnDisable() {
         GameManager.instance.onPlay -= StopSound;
         playButton.onClick.RemoveListener(PlayEvent);
-    }
+		quitButton.onClick.RemoveListener(Quit);
+	}
 
 
     private IEnumerator Splash() {
@@ -43,6 +46,11 @@ public class UI_MainMenu : MonoBehaviour
     private void PlayEvent() {
         GameManager.instance.LoadScene(1);
     }
+
+	private void Quit()
+	{
+		GameManager.instance.QuitGame();
+	}
 
 	private void StopSound()
 	{
