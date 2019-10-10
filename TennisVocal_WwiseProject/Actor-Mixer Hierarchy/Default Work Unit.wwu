@@ -564,6 +564,25 @@
 						<ActiveSource Name="VS_Drop" ID="{31FD3796-1451-4B13-89A1-52B0F0DA16D8}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="VS_Schling" ID="{9828CCC2-8D60-4E63-A4A1-0BBB017C9096}" ShortID="512703622">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{52E70617-2915-4002-B136-4D69D0D19716}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{4682D128-ACFD-4A03-8ACA-4CF5CE308B43}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="VS_Schling" ID="{89F9B446-CB57-4FD1-AFCC-039E6A29BCBD}" ShortID="827045776">
+							<Language>SFX</Language>
+							<AudioFile>VS_Schling.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="VS_Schling" ID="{89F9B446-CB57-4FD1-AFCC-039E6A29BCBD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

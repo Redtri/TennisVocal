@@ -27,6 +27,7 @@
 				<Event Id="3581374598" Name="TennisBall_Shoot_Event" ObjectPath="\Events\Default Work Unit\All\TennisBall_Shoot_Event" DurationType="OneShot" DurationMin="0.198184" DurationMax="0.977020"/>
 				<Event Id="2528159659" Name="UI_Click_Event" ObjectPath="\Events\Default Work Unit\All\UI_Click_Event" DurationType="OneShot" DurationMin="2.526326" DurationMax="2.526326"/>
 				<Event Id="3667070125" Name="UI_Hover_Event" ObjectPath="\Events\Default Work Unit\All\UI_Hover_Event" DurationType="OneShot" DurationMin="0.255669" DurationMax="0.453333"/>
+				<Event Id="1210062646" Name="VS_Anim_2_Event" ObjectPath="\Events\Default Work Unit\All\VS_Anim_2_Event" DurationType="OneShot" DurationMin="2.250000" DurationMax="2.250000"/>
 				<Event Id="3574916797" Name="VS_Anim_Event" ObjectPath="\Events\Default Work Unit\All\VS_Anim_Event" DurationType="OneShot" DurationMin="2.210544" DurationMax="2.210544"/>
 				<Event Id="4187076448" Name="Win_Event" ObjectPath="\Events\Default Work Unit\All\Win_Event" DurationType="OneShot" DurationMin="4.247434" DurationMax="4.767584"/>
 			</IncludedEvents>
@@ -90,6 +91,10 @@
 				<File Id="762528213" Language="SFX">
 					<ShortName>tennisballshoot-006.wav</ShortName>
 					<Path>SFX/tennisballshoot-006_10C4C929.wem</Path>
+				</File>
+				<File Id="827045776" Language="SFX">
+					<ShortName>VS_Schling.wav</ShortName>
+					<Path>SFX/VS_Schling_10C4C929.wem</Path>
 				</File>
 				<File Id="856329045" Language="SFX">
 					<ShortName>tennisballshoot-004.wav</ShortName>
