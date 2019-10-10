@@ -8,29 +8,30 @@ public enum eGAME_STATE { RUN, LOAD, PAUSE};
 
 public class GameManager : MonoBehaviour
 {
-   // public static GameObject currentCanvas;
-    private static bool isPaused;
+    public const int maxPoints = 10;
+    private bool isPaused;
     public static GameManager instance { get; private set; }
-    public static eGAME_PHASE gamePhase { get; private set; }
-    public static eGAME_STATE gameState { get; private set; }
-    private static bool loaded;
-    public static int[] scores { get; private set; }
-    private static int lastPlayerGoal;
+    public eGAME_PHASE gamePhase { get; private set; }
+    public eGAME_STATE gameState { get; private set; }
+    private bool loaded;
+    public int[] scores { get; private set; }
+    private int lastPlayerGoal;
 
     public delegate void Service(int playerIndex);
     public event Service onService;
+
+    public delegate void End();
+    public event End onEnd;
 
 	public delegate void Pause(bool isPause);
 	public event Pause onPause;
 
     private void OnEnable() {
         SceneManager.sceneLoaded += OnSceneLoaded;
-        onService += PrintCouille;
     }
 
     private void OnDisable() {
         SceneManager.sceneLoaded -= OnSceneLoaded;
-        onService -= PrintCouille;
     }
 
     private void Awake() {
@@ -71,13 +72,13 @@ public class GameManager : MonoBehaviour
         StartService(lastPlayerGoal);
     }
 
-    private void StartService(int playerIndex) {
-        onService?.Invoke(playerIndex);
-       // currentCanvas.transform.GetChild(1).gameObject.SetActive(false);
+    private IEnumerator CoService(int playerIndex) {
+        yield return new WaitForSecondsRealtime(3f);
+        StartService(playerIndex);
     }
 
-    private void PrintCouille(int d) {
-        print("couille");
+    private void StartService(int playerIndex) {
+        onService?.Invoke(playerIndex);
     }
 
     //LOADING
@@ -89,10 +90,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void LoadCanvas() {
-       // currentCanvas = FindObjectOfType<Canvas>().gameObject;
-    }
-
     public void LoadScene(int index) {
         SceneManager.LoadScene(index);
     }
@@ -100,6 +97,11 @@ public class GameManager : MonoBehaviour
     public void AddScore(int playerIndex) {
         scores[playerIndex] += 1;
         lastPlayerGoal = playerIndex;
+        if (scores[playerIndex] == maxPoints) {
+            onEnd.Invoke();
+        } else {
+            StartCoroutine(CoService(playerIndex));
+        }
     }
 
     public void QuitGame() {
