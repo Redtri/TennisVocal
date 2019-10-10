@@ -8,12 +8,13 @@ public enum eGAME_STATE { RUN, LOAD, PAUSE};
 [DefaultExecutionOrder(-1000)]
 public class GameManager : MonoBehaviour
 {
-    public const int maxPoints = 5;
+    public const int maxPoints = 1;
     private bool isPaused;
     public static GameManager instance { get; private set; }
     public eGAME_PHASE gamePhase { get; private set; }
     public eGAME_STATE gameState { get; private set; }
     private bool loaded;
+    private bool ended;
     public int[] scores { get; private set; }
     private int lastPlayerGoal;
 
@@ -31,7 +32,6 @@ public class GameManager : MonoBehaviour
 
     private void OnEnable() {
         SceneManager.sceneLoaded += OnSceneLoaded;
-		
     }
 
     private void OnDisable() {
@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
 	}
 
 	void Update() {
-        if (Input.GetKeyDown(KeyCode.Escape)) {
+        if (Input.GetKeyDown(KeyCode.Escape) && !ended) {
             PauseResume();
         }
     }
@@ -95,6 +95,7 @@ public class GameManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
         Invoke("LoadCanvas", 0.01f);
         if(scene.buildIndex == 1) {
+            ended = false;
             StartCoroutine(StartVersus());
         } else {
             for (int i = 0; i < scores.Length; i ++) {
@@ -114,6 +115,7 @@ public class GameManager : MonoBehaviour
         scores[playerIndex] += 1;
         lastPlayerGoal = playerIndex;
         if (scores[playerIndex] == maxPoints) {
+            ended = true;
             onEnd?.Invoke();
             Time.timeScale = 0f;
         } else {

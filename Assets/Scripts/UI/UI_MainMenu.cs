@@ -17,7 +17,7 @@ public class UI_MainMenu : MonoBehaviour
 		GameManager.instance.onPlay += StopSound;
         playButton.onClick.AddListener(PlayEvent);
 		quitButton.onClick.AddListener(Quit);
-        splash.SetActive(true);
+        //splash.SetActive(true);
         StartCoroutine(Splash());
 	}
 
@@ -29,7 +29,7 @@ public class UI_MainMenu : MonoBehaviour
 
 
     private IEnumerator Splash() {
-        yield return new WaitForSeconds(4.6f);
+        yield return new WaitForSeconds(4.7f);
         splash.SetActive(false);
     }
 
